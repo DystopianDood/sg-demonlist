@@ -164,7 +164,7 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
         <h2 style="margin-top:0">Submit Record</h2>
         <p style="color:var(--text-dim);font-size:14px">Submissions follow pointercrate guidelines. Only Singapore citizens/PRs are counted for national ranking. All records are reviewed by SG list mods.</p>
         <form id="recordForm" style="margin-top:20px">
-          <label>Demon<select id="demonSelect" required></select></label>
+          <label>Demon Name<input id="demonInput" required placeholder="Type exact demon name (e.g., Slaughterhouse)"></label>
           <div style="display:grid;grid-template-columns:1fr 130px;gap:12px">
             <label>Player Name<input id="playerName" required placeholder="EthanL" pattern="[A-Za-z0-9_]{3,20}"></label>
             <label>Progress %<input id="progress" type="number" min="1" max="100" required placeholder="100"></label>
@@ -218,8 +218,6 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
   <div>Inspired by <strong>pointercrate.com</strong> | Made for Singapore GD Community 🇸🇬</div>
   <div class="footer-actions">
     <button class="btn-secondary" id="exportBtn">Export JSON</button>
-    <label class="btn-secondary" style="cursor:pointer">Import JSON<input id="importFile" type="file" accept=".json" hidden></label>
-    <button class="btn-secondary" id="resetBtn">Reset to Demo Data</button>
   </div>
 </footer>
 
@@ -5462,15 +5460,13 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
   }
 
   function populateSubmit(){
-    const sel=document.getElementById('demonSelect');
-    sel.innerHTML = '<option value="">Select Demon</option>' + data.demons.filter(d=>d.rank<=150).sort((a,b)=>a.rank-b.rank).map(d=>`<option value="${d.id}">#${d.rank} - ${d.name}</option>`).join('');
     renderPending();
   }
 
   function renderPending(){
     const el=document.getElementById('pendingList');
-    if(!data.pending.length){ el.innerHTML=`<span style="color:var(--text-dim)">No pending submissions</span>`; return; }
-    el.innerHTML = data.pending.slice().reverse().slice(0,10).map(p=>`<div style="padding:8px 0;border-bottom:1px solid #222;display:flex;justify-content:space-between;gap:10px"><span>🇸🇬 ${p.player} — #${data.demons.find(d=>d.id==p.demonId)?.rank} ${p.demonName} (${p.progress}%)</span><span style="color:var(--text-dim);font-size:12px">${p.status}</span></div>`).join('');
+    if(!data.pending || !data.pending.length){ el.innerHTML=`<span style="color:var(--text-dim)">No pending submissions</span>`; return; }
+    el.innerHTML = data.pending.slice().reverse().slice(0,10).map(p=>`<div style="padding:8px 0;border-bottom:1px solid #222;display:flex;justify-content:space-between;gap:10px"><span>🇸🇬 ${p.player} — ${p.demonId ? '#'+data.demons.find(d=>d.id==p.demonId)?.rank+' ' : ''}${p.demonName} (${p.progress}%)</span><span style="color:var(--text-dim);font-size:12px">${p.status}</span></div>`).join('');
   }
 
   function renderChangelog(){
@@ -5489,21 +5485,22 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
 
     document.getElementById('recordForm').addEventListener('submit',e=>{
       e.preventDefault();
-      const demonId=+document.getElementById('demonSelect').value;
-      const demon=data.demons.find(d=>d.id===demonId);
+      const demonName=document.getElementById('demonInput').value.trim();
+      const demon=data.demons.find(d=>d.name.toLowerCase()===demonName.toLowerCase());
+      const demonId = demon ? demon.id : null;
       const player=document.getElementById('playerName').value.trim();
       const progress=+document.getElementById('progress').value;
       const video=document.getElementById('videoUrl').value.trim();
-      if(progress < demon.minPercent){ showMsg(`Minimum ${demon.minPercent}% required for ${demon.name}`,true); return; }
+      if(demon && progress < demon.minPercent){ showMsg(`Minimum ${demon.minPercent}% required for ${demon.name}`,true); return; }
       const sgChecked = document.getElementById('sgCitizen').checked;
       if(!sgChecked){ showMsg('You must confirm the player is Singaporean',true); return; }
-      const record = {id:Date.now(),demonId,demonName:demon.name,player,progress,videoUrl:video,rawUrl:document.getElementById('rawUrl').value.trim(),notes:document.getElementById('notes').value.trim(),sg:sgChecked,status:'pending',date:new Date().toISOString().slice(0,10)};
+      const record = {id:Date.now(),demonId,demonName,player,progress,videoUrl:video,rawUrl:document.getElementById('rawUrl').value.trim(),notes:document.getElementById('notes').value.trim(),sg:sgChecked,status:'pending',date:new Date().toISOString().slice(0,10)};
       data.pending.push(record);
       save(); renderPending(); e.target.reset(); document.getElementById('sgCitizen').checked=true;
       
       // Discord webhook - PRESET IN CODE (users cannot change this)
       // >>> EDIT THIS LINE: paste your Discord webhook URL between the quotes <<<
-      const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1509523813291790397/gWKmp-QIxE0UlwUDuYWwgwmXcHuyqV68OG9Ri6FYS8Y12zcNbvXcoCwM0KvUptrflYyl';
+      const DISCORD_WEBHOOK_URL = '';
       
       if(DISCORD_WEBHOOK_URL && DISCORD_WEBHOOK_URL.startsWith('https://discord.com/api/webhooks/')){
         fetch(DISCORD_WEBHOOK_URL, {
@@ -5516,7 +5513,7 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
               color: 16733525,
               fields: [
                 {name:'Player', value: player, inline:true},
-                {name:'Demon', value: `${demon.name} (#${demon.rank})`, inline:true},
+                {name:'Demon', value: demon ? `${demon.name} (#${demon.rank})` : demonName + ' (new/unlisted)', inline:true},
                 {name:'Progress', value: progress + '%', inline:true},
                 {name:'Video', value: video || 'None'},
                 {name:'Raw', value: record.rawUrl || 'None'},
@@ -5535,13 +5532,10 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
     function showMsg(t,err=false){ const m=document.getElementById('submitMessage'); m.innerHTML=`<div style="padding:10px 12px;border-radius:8px;background:${err?'#2a1215':'#12261a'};border:1px solid ${err?'#ff4d4d':'#1f5d3a'};color:${err?'#ff8080':'#7ee0a3'};font-size:13px">${t}</div>`; setTimeout(()=>m.innerHTML='',5000); }
 
     document.getElementById('exportBtn').addEventListener('click',()=>{ const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}); const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download='sg-demonlist.json'; a.click(); URL.revokeObjectURL(url); });
-    document.getElementById('importFile').addEventListener('change',e=>{ const f=e.target.files[0]; if(!f) return; const r=new FileReader(); r.onload=()=>{ try{ data=JSON.parse(r.result); save(); location.reload(); }catch{alert('Invalid JSON')} }; r.readAsText(f); });
-    document.getElementById('resetBtn').addEventListener('click',()=>{ if(confirm('Reset all data to demo?')){ localStorage.removeItem(STORE); location.reload(); } });
 
     // Admin panel
     const modal=document.getElementById('adminModal');
     // Press 'A' shortcut removed for public read-only version
-    // document.addEventListener('keydown',e=>{ if(e.key.toLowerCase()==='a' && !['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)){ e.preventDefault(); modal.classList.toggle('hidden'); }});
     document.getElementById('adminCancel').addEventListener('click',()=>modal.classList.add('hidden'));
     modal.addEventListener('click',e=>{ if(e.target===modal) modal.classList.add('hidden') });
     document.getElementById('adminForm').addEventListener('submit',e=>{
