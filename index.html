@@ -164,7 +164,7 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
         <h2 style="margin-top:0">Submit Record</h2>
         <p style="color:var(--text-dim);font-size:14px">Submissions follow pointercrate guidelines. Only Singapore citizens/PRs are counted for national ranking. All records are reviewed by SG list mods.</p>
         <form id="recordForm" style="margin-top:20px">
-          <label>Demon<select id="demonSelect" required></select></label>
+          <label>Demon Name<input id="demonSelect" required placeholder="Enter exact level name (e.g. Sevvend Clubstep)" list="demonList"></label><datalist id="demonList"></datalist>
           <div style="display:grid;grid-template-columns:1fr 130px;gap:12px">
             <label>Player Name<input id="playerName" required placeholder="EthanL" pattern="[A-Za-z0-9_]{3,20}"></label>
             <label>Progress %<input id="progress" type="number" min="1" max="100" required placeholder="100"></label>
@@ -5483,8 +5483,8 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
   }
 
   function populateSubmit(){
-    const sel=document.getElementById('demonSelect');
-    sel.innerHTML = '<option value="">Select Demon</option>' + data.demons.filter(d=>d.rank<=150).sort((a,b)=>a.rank-b.rank).map(d=>`<option value="${d.id}">#${d.rank} - ${d.name}</option>`).join('');
+    const dl=document.getElementById('demonList');
+    dl.innerHTML = data.demons.filter(d=>d.rank<=150).sort((a,b)=>a.rank-b.rank).map(d=>`<option value="${d.name}">`).join('');
     renderPending();
   }
 
@@ -5513,8 +5513,10 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
 
     document.getElementById('recordForm').addEventListener('submit',e=>{
       e.preventDefault();
-      const demonId=+document.getElementById('demonSelect').value;
-      const demon=data.demons.find(d=>d.id===demonId);
+      const demonNameInput=document.getElementById('demonSelect').value.trim();
+      const demon=data.demons.find(d=>d.name.toLowerCase()===demonNameInput.toLowerCase());
+      if(!demon){ showMsg(`Level "${demonNameInput}" not found. Please enter the exact name.`,true); return; }
+      const demonId = demon.id;
       const player=document.getElementById('playerName').value.trim();
       const progress=+document.getElementById('progress').value;
       const video=document.getElementById('videoUrl').value.trim();
