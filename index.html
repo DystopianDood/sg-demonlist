@@ -5291,7 +5291,7 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
     };
   }
 
-  function load(){ const raw=localStorage.getItem(STORE); data = raw ? JSON.parse(raw) : initDemoData(); save(); }
+  function load(){ const raw=localStorage.getItem(STORE); data = raw ? JSON.parse(raw) : initDemoData(); data.pending = data.pending || []; data.records = data.records || []; data.players = data.players || []; data.changelog = data.changelog || []; save(); }
   function save(){ localStorage.setItem(STORE, JSON.stringify(data)); }
 
   function calcPoints(demon, progress){
@@ -5502,8 +5502,8 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
       save(); renderPending(); e.target.reset(); document.getElementById('sgCitizen').checked=true;
       
       // Discord webhook - PRESET IN CODE (users cannot change this)
-      // >>> EDIT THIS LINE: paste your Discord webhook URL between the quotes ig <<<
-      const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1509523813291790397/gWKmp-QIxE0UlwUDuYWwgwmXcHuyqV68OG9Ri6FYS8Y12zcNbvXcoCwM0KvUptrflYyl';
+      // >>> EDIT THIS LINE: paste your Discord webhook URL between the quotes <<<
+      const DISCORD_WEBHOOK_URL = '';
       
       if(DISCORD_WEBHOOK_URL && DISCORD_WEBHOOK_URL.startsWith('https://discord.com/api/webhooks/')){
         fetch(DISCORD_WEBHOOK_URL, {
@@ -5540,7 +5540,8 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
 
     // Admin panel
     const modal=document.getElementById('adminModal');
-    document.addEventListener('keydown',e=>{ if(e.key.toLowerCase()==='a' && !['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)){ e.preventDefault(); modal.classList.toggle('hidden'); }});
+    // Press 'A' shortcut removed for public read-only version
+    // document.addEventListener('keydown',e=>{ if(e.key.toLowerCase()==='a' && !['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)){ e.preventDefault(); modal.classList.toggle('hidden'); }});
     document.getElementById('adminCancel').addEventListener('click',()=>modal.classList.add('hidden'));
     modal.addEventListener('click',e=>{ if(e.target===modal) modal.classList.add('hidden') });
     document.getElementById('adminForm').addEventListener('submit',e=>{
@@ -5555,6 +5556,21 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
       data.demons.sort((a,b)=>a.rank-b.rank); save(); modal.classList.add('hidden'); e.target.reset();
       renderList('mainListTable','demonDetailMain',1,75); renderList('extendedListTable','demonDetailExtended',76,150); populateSubmit();
     });
+  }
+
+  
+  // webhook settings
+  const whInput = document.getElementById('webhookUrl');
+  const whStatus = document.getElementById('webhookStatus');
+  if(whInput){
+    whInput.value = localStorage.getItem('sg_discord_webhook') || '';
+    document.getElementById('saveWebhook').onclick = ()=>{
+      const url = whInput.value.trim();
+      if(url && !url.startsWith('https://discord.com/api/webhooks/')){ whStatus.textContent='Invalid webhook URL'; whStatus.style.color='#ff8080'; return; }
+      if(url){ localStorage.setItem('sg_discord_webhook', url); } else { localStorage.removeItem('sg_discord_webhook'); }
+      whStatus.textContent = url ? 'Saved! New submissions will be sent to Discord.' : 'Disabled';
+      whStatus.style.color = 'var(--text-dim)';
+    };
   }
 
   document.addEventListener('DOMContentLoaded', init);
