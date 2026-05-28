@@ -5289,7 +5289,30 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
     };
   }
 
-  function load(){ const raw=localStorage.getItem(STORE); data = raw ? JSON.parse(raw) : initDemoData(); data.pending = data.pending || []; data.records = data.records || []; data.players = data.players || []; data.changelog = data.changelog && data.changelog.length ? data.changelog : initDemoData().changelog; save(); }
+  function load(){ 
+    // Try to load from sg-data.json first, then localStorage, then demo
+    fetch('sg-data.json', {cache: 'no-store'})
+      .then(r => r.ok ? r.json() : Promise.reject())
+      .then(json => {
+        data = json;
+        data.pending = data.pending || []; 
+        data.records = data.records || []; 
+        data.players = data.players || []; 
+        data.changelog = data.changelog || initDemoData().changelog;
+        save();
+        initApp();
+      })
+      .catch(() => {
+        const raw=localStorage.getItem(STORE); 
+        data = raw ? JSON.parse(raw) : initDemoData(); 
+        data.pending = data.pending || []; 
+        data.records = data.records || []; 
+        data.players = data.players || []; 
+        data.changelog = data.changelog && data.changelog.length ? data.changelog : initDemoData().changelog; 
+        save();
+        initApp();
+      });
+  }
   function save(){ localStorage.setItem(STORE, JSON.stringify(data)); }
 
   function calcPoints(demon, progress){
@@ -5477,6 +5500,9 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
 
   function init(){
     load();
+  }
+
+  function initApp(){
     document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();showView(a.dataset.view);document.getElementById('navLinks').classList.remove('open')}));
     document.getElementById('menuToggle').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));
     renderList('mainListTable','demonDetailMain',1,75);
