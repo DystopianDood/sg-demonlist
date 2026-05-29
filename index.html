@@ -5494,8 +5494,12 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
     el.innerHTML = data.pending.slice().reverse().slice(0,10).map(p=>`<div style="padding:8px 0;border-bottom:1px solid #222;display:flex;justify-content:space-between;gap:10px"><span>🇸🇬 ${p.player} — #${data.demons.find(d=>d.id==p.demonId)?.rank} ${p.demonName} (${p.progress}%)</span><span style="color:var(--text-dim);font-size:12px">${p.status}</span></div>`).join('');
   }
 
+  const CHANGELOG = [
+    {date:'2026-05-29', changes:['Added Discord webhook proxy for submissions','Fixed CORS issues']},
+    {date:'2026-05-28', changes:['Initial SG Demonlist release']}
+  ];
   function renderChangelog(){
-    document.getElementById('changelogContent').innerHTML = data.changelog.map(e=>`<div class="changelog-entry"><div class="changelog-date mono">${e.date}</div><ul>${e.changes.map(c=>`<li>${c}</li>`).join('')}</ul></div>`).join('');
+    document.getElementById('changelogContent').innerHTML = CHANGELOG.map(e=>`<div class="changelog-entry"><div class="changelog-date mono">${e.date}</div><ul>${e.changes.map(c=>`<li>${c}</li>`).join('')}</ul></div>`).join('');
   }
 
   function init(){
