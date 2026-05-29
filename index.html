@@ -5527,16 +5527,16 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
       data.pending.push(record);
       save(); renderPending(); e.target.reset(); document.getElementById('sgCitizen').checked=true;
       
-      // Discord webhook - PRESET IN CODE (users cannot change this)
-      // >>> EDIT THIS LINE: paste your Discord webhook URL between the quotes <<<
-      const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1509523813291790397/gWKmp-QIxE0UlwUDuYWwgwmXcHuyqV68OG9Ri6FYS8Y12zcNbvXcoCwM0KvUptrflYyl';
+      // Discord notification via proxy (fixes CORS)
+      const PROXY_URL = 'https://sg-demonlist.trxk01.workers.dev'; // your deployed worker
       
-      if(DISCORD_WEBHOOK_URL && DISCORD_WEBHOOK_URL.startsWith('https://discord.com/api/webhooks/')){
-        fetch(DISCORD_WEBHOOK_URL, {
+      if(PROXY_URL){
+        fetch(PROXY_URL, {
           method:'POST',
           headers:{'Content-Type':'application/json'},
           body: JSON.stringify({
             username: 'SG Demonlist',
+            content: null,
             embeds: [{
               title: '🇸🇬 New Record Submission',
               color: 16733525,
@@ -5552,10 +5552,16 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
               timestamp: new Date().toISOString()
             }]
           })
-        }).catch(()=>{});
+        }).then(r => {
+          if(!r.ok) throw new Error('Proxy returned '+r.status);
+          showMsg('Record submitted! SG mods will review per pointercrate guidelines. Typical review: 24-48h. Discord notified.');
+        }).catch(err => {
+          console.error('Discord proxy failed:', err);
+          showMsg('Record submitted! (Saved locally) Discord notification failed – check proxy URL in settings.', true);
+        });
+      } else {
+        showMsg('Record submitted! SG mods will review per pointercrate guidelines. Typical review: 24-48h. (Discord not configured)');
       }
-      
-      showMsg('Record submitted! SG mods will review per pointercrate guidelines. Typical review: 24-48h.' + (DISCORD_WEBHOOK_URL ? ' Discord notified.' : ''));
     });
 
     function showMsg(t,err=false){ const m=document.getElementById('submitMessage'); m.innerHTML=`<div style="padding:10px 12px;border-radius:8px;background:${err?'#2a1215':'#12261a'};border:1px solid ${err?'#ff4d4d':'#1f5d3a'};color:${err?'#ff8080':'#7ee0a3'};font-size:13px">${t}</div>`; setTimeout(()=>m.innerHTML='',5000); }
@@ -5584,19 +5590,21 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
   }
 
   
-  // webhook settings
+  // proxy settings disabled - using hardcoded PROXY_URL
+  /*
   const whInput = document.getElementById('webhookUrl');
   const whStatus = document.getElementById('webhookStatus');
   if(whInput){
-    whInput.value = localStorage.getItem('sg_discord_webhook') || '';
+    whInput.value = localStorage.getItem('sg_proxy_url') || '';
     document.getElementById('saveWebhook').onclick = ()=>{
       const url = whInput.value.trim();
-      if(url && !url.startsWith('https://discord.com/api/webhooks/')){ whStatus.textContent='Invalid webhook URL'; whStatus.style.color='#ff8080'; return; }
-      if(url){ localStorage.setItem('sg_discord_webhook', url); } else { localStorage.removeItem('sg_discord_webhook'); }
-      whStatus.textContent = url ? 'Saved! New submissions will be sent to Discord.' : 'Disabled';
+      if(url && !url.startsWith('https://')){ whStatus.textContent='Must be https:// URL'; whStatus.style.color='#ff8080'; return; }
+      if(url){ localStorage.setItem('sg_proxy_url', url); } else { localStorage.removeItem('sg_proxy_url'); }
+      whStatus.textContent = url ? 'Saved! New submissions will use proxy.' : 'Disabled';
       whStatus.style.color = 'var(--text-dim)';
     };
   }
+  */
 
   document.addEventListener('DOMContentLoaded', init);
 })();
