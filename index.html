@@ -5498,61 +5498,4035 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
     {date:'2026-05-29', changes:['Added Discord webhook proxy for submissions','Fixed CORS issues']},
     {date:'2026-05-28', changes:['Initial SG Demonlist release']}
   ];
-  function renderChangelog(){
-    document.getElementById('changelogContent').innerHTML = CHANGELOG.map(e=>`<div class="changelog-entry"><div class="changelog-date mono">${e.date}</div><ul>${e.changes.map(c=>`<li>${c}</li>`).join('')}</ul></div>`).join('');
+  const STORE = 'sg-demonlist-v1';
+  let data = JSON.parse(localStorage.getItem(STORE)) || {
+    demons: [
+  {
+    "id": "1",
+    "rank": 1,
+    "name": "Sevvend Clubstep",
+    "creator": "cherryteam",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 250.0,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 100,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "2",
+    "rank": 2,
+    "name": "Waterfall",
+    "creator": "cherryteam",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 228.414,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 100,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "3",
+    "rank": 3,
+    "name": "Jigsaw",
+    "creator": "NEKONGAMES and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 210.905,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 100,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "4",
+    "rank": 4,
+    "name": "The Golden",
+    "creator": "BoBoBoBoBoBoBo and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 196.331,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 100,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "5",
+    "rank": 5,
+    "name": "Trueffet",
+    "creator": "SyQual and Rainstorm",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 183.955,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 100,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "6",
+    "rank": 6,
+    "name": "Hard Machine",
+    "creator": "Komp and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 173.275,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 75,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "7",
+    "rank": 7,
+    "name": "Zodiac",
+    "creator": "BIANOX and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 163.935,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 75,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "8",
+    "rank": 8,
+    "name": "Cold Sweat",
+    "creator": "para and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 155.677,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 75,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "9",
+    "rank": 9,
+    "name": "ConClusion",
+    "creator": "DreamZoneGD",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 148.307,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 75,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "10",
+    "rank": 10,
+    "name": "shimmer",
+    "creator": "amplitron",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 141.677,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 75,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "11",
+    "rank": 11,
+    "name": "Axiom Asterism",
+    "creator": "Filqh and fusion325",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 135.67,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 75,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "12",
+    "rank": 12,
+    "name": "Cognition",
+    "creator": "benji8080 and Endlevel",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 130.194,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 75,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "13",
+    "rank": 13,
+    "name": "qoUEO",
+    "creator": "GhostVandalf",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 125.176,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 75,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "14",
+    "rank": 14,
+    "name": "SARY NEVER CLEAR",
+    "creator": "Kugelblitz and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 120.556,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 75,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "15",
+    "rank": 15,
+    "name": "ta1LSD0ll",
+    "creator": "ta1LSD0ll",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 116.282,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 75,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "16",
+    "rank": 16,
+    "name": "Call Me Maybe",
+    "creator": "hawkyre",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 112.315,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 75,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "17",
+    "rank": 17,
+    "name": "RUST",
+    "creator": "neigefeu",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 108.618,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 75,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "18",
+    "rank": 18,
+    "name": "Shardscapes",
+    "creator": "ItzKiba",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 105.163,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 75,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "19",
+    "rank": 19,
+    "name": "Cobwebs",
+    "creator": "NineDice",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 101.925,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 75,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "20",
+    "rank": 20,
+    "name": "Bloodlust",
+    "creator": "Manix648 and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 98.881,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 75,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "21",
+    "rank": 21,
+    "name": "Jesse Pinkman",
+    "creator": "Renn241",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 96.013,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "22",
+    "rank": 22,
+    "name": "X84",
+    "creator": "XavT",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 93.305,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "23",
+    "rank": 23,
+    "name": "CITRA",
+    "creator": "Varse",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 90.742,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "24",
+    "rank": 24,
+    "name": "Awedsy",
+    "creator": "sink and SleyGD",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 88.311,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "25",
+    "rank": 25,
+    "name": "Congregation",
+    "creator": "Presta",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 86.003,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "26",
+    "rank": 26,
+    "name": "Sigma",
+    "creator": "MindCap and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 83.806,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "27",
+    "rank": 27,
+    "name": "Knights of Thunder",
+    "creator": "HangerLord",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 81.713,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "28",
+    "rank": 28,
+    "name": "ATOMIC CANNON",
+    "creator": "LIEB",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 79.714,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "29",
+    "rank": 29,
+    "name": "Nhelv",
+    "creator": "SrGuillester and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 77.804,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "30",
+    "rank": 30,
+    "name": "FusionDynamix (unnerfed)",
+    "creator": "twister and NukellX",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 75.976,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "31",
+    "rank": 31,
+    "name": "Visible Ray",
+    "creator": "Krampux and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 74.224,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "32",
+    "rank": 32,
+    "name": "Ghoul",
+    "creator": "XavT",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 72.544,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "33",
+    "rank": 33,
+    "name": "The Yandere",
+    "creator": "Dorami and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 70.93,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "34",
+    "rank": 34,
+    "name": "Arctic Lights",
+    "creator": "Endlevel and iIiViRuZiIi",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 69.377,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "35",
+    "rank": 35,
+    "name": "Spectrum Cyclone",
+    "creator": "Temp",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 67.884,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "36",
+    "rank": 36,
+    "name": "Shutdown",
+    "creator": "OliSW",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 66.445,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "37",
+    "rank": 37,
+    "name": "WORSTBRAINMAP",
+    "creator": "bims",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 65.057,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "38",
+    "rank": 38,
+    "name": "ConTroller",
+    "creator": "DreamZoneGD",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 63.718,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "39",
+    "rank": 39,
+    "name": "AKIRA",
+    "creator": "Eridani and Denni",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 62.424,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "40",
+    "rank": 40,
+    "name": "Hyper Paracosm",
+    "creator": "iIiViRuZiIi",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 61.174,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "41",
+    "rank": 41,
+    "name": "Wasureta",
+    "creator": "crazen and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 59.964,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "42",
+    "rank": 42,
+    "name": "Cybernetic Crescent",
+    "creator": "ViPriN and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 58.793,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "43",
+    "rank": 43,
+    "name": "Sink",
+    "creator": "Awedsy",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 57.659,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "44",
+    "rank": 44,
+    "name": "Sonic Wave Rebirth",
+    "creator": "Serponge and Funnygame",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 56.56,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "45",
+    "rank": 45,
+    "name": "Sonic Wave",
+    "creator": "Cyclic",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 55.493,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "46",
+    "rank": 46,
+    "name": "LUMINA",
+    "creator": "hechie and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 54.458,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "47",
+    "rank": 47,
+    "name": "Yatagarasu",
+    "creator": "ViPriN and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 53.453,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "48",
+    "rank": 48,
+    "name": "Kuzureta",
+    "creator": "Teno and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 52.476,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "49",
+    "rank": 49,
+    "name": "Shmarley Ville",
+    "creator": "Renn241",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 51.526,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "50",
+    "rank": 50,
+    "name": "xo",
+    "creator": "KrmaL",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 50.603,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "51",
+    "rank": 51,
+    "name": "super probably level",
+    "creator": "alkali",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 49.704,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "52",
+    "rank": 52,
+    "name": "Molten Core",
+    "creator": "Janucha",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 48.828,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "53",
+    "rank": 53,
+    "name": "Friday Vortex",
+    "creator": "Cersia and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 47.976,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "54",
+    "rank": 54,
+    "name": "Generic Wave",
+    "creator": "Pennutoh and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 47.145,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "55",
+    "rank": 55,
+    "name": "Quantum Theory",
+    "creator": "herozombie80",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 46.335,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "56",
+    "rank": 56,
+    "name": "Freedom08",
+    "creator": "Pennutoh and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 45.545,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "57",
+    "rank": 57,
+    "name": "Erebus",
+    "creator": "Ilrell and Rustam",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 44.774,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "58",
+    "rank": 58,
+    "name": "The Reaper",
+    "creator": "Kyhros and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 44.021,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "59",
+    "rank": 59,
+    "name": "Celestial Force",
+    "creator": "MindCap and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 43.286,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "60",
+    "rank": 60,
+    "name": "Framework",
+    "creator": "Agat3",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 42.568,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "61",
+    "rank": 61,
+    "name": "Devil Vortex",
+    "creator": "Rustam",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 41.866,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "62",
+    "rank": 62,
+    "name": "Retention Rush",
+    "creator": "TheBlackHell",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 41.18,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "63",
+    "rank": 63,
+    "name": "Digital Descent",
+    "creator": "ViPriN and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 40.509,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "64",
+    "rank": 64,
+    "name": "TheCinnyBun",
+    "creator": "Renn241",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 39.853,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "65",
+    "rank": 65,
+    "name": "Cadrega City",
+    "creator": "Pennutoh and Berke423",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 39.211,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "66",
+    "rank": 66,
+    "name": "Stalemate Redux",
+    "creator": "TehTactiq and TheFrozenTide",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 38.582,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "67",
+    "rank": 67,
+    "name": "ZAPHKIEL",
+    "creator": "Noctafly and Darwin",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 37.967,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "68",
+    "rank": 68,
+    "name": "lovel",
+    "creator": "WireMuncher",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 37.364,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "69",
+    "rank": 69,
+    "name": "Killbot",
+    "creator": "Lithifusion",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 36.773,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "70",
+    "rank": 70,
+    "name": "Artificial Ascent",
+    "creator": "ViPriN and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 36.194,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "71",
+    "rank": 71,
+    "name": "Edelweiss",
+    "creator": "Hexitine",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 35.627,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "72",
+    "rank": 72,
+    "name": "Belloq",
+    "creator": "Sminx and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 35.071,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "73",
+    "rank": 73,
+    "name": "Crystal",
+    "creator": "Zeronium",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 34.525,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "74",
+    "rank": 74,
+    "name": "Diamond Disco",
+    "creator": "Zeronium",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 33.99,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "75",
+    "rank": 75,
+    "name": "Night Rider",
+    "creator": "LmAnubis and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 33.465,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 70,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "76",
+    "rank": 76,
+    "name": "Black Flag",
+    "creator": "NEKONGAMES",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 32.949,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "77",
+    "rank": 77,
+    "name": "Quantum Processing",
+    "creator": "Riot and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 32.443,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "78",
+    "rank": 78,
+    "name": "Black Blizzard",
+    "creator": "KrmaL",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 31.946,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "79",
+    "rank": 79,
+    "name": "distraught",
+    "creator": "alkali and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 31.458,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "80",
+    "rank": 80,
+    "name": "Neurostasis",
+    "creator": "KiwiPenguin",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 30.979,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "81",
+    "rank": 81,
+    "name": "Ethereal Artifice",
+    "creator": "Zeroya",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 30.508,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "82",
+    "rank": 82,
+    "name": "Glowy",
+    "creator": "Rob Buck",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 30.045,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "83",
+    "rank": 83,
+    "name": "Astral Divinity",
+    "creator": "knobbelboy",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 29.59,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "84",
+    "rank": 84,
+    "name": "MISFIRE",
+    "creator": "Galaxxyss",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 29.142,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "85",
+    "rank": 85,
+    "name": "rosedynamix",
+    "creator": "Renn241 and Rwse",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 28.702,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "86",
+    "rank": 86,
+    "name": "Rate Demon",
+    "creator": "MikeWheelerFan",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 28.27,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "87",
+    "rank": 87,
+    "name": "Void Wave",
+    "creator": "cherryteam",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 27.844,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "88",
+    "rank": 88,
+    "name": "Faded Dream",
+    "creator": "DreamTide",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 27.426,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "89",
+    "rank": 89,
+    "name": "Bausha Vortex",
+    "creator": "Pennutoh",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 27.014,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "90",
+    "rank": 90,
+    "name": "Balengu Vortex",
+    "creator": "Temp and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 26.608,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "91",
+    "rank": 91,
+    "name": "Sinister Incision",
+    "creator": "ItsHybrid and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 26.209,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "92",
+    "rank": 92,
+    "name": "The Hell Zone",
+    "creator": "Cyclic and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 25.816,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "93",
+    "rank": 93,
+    "name": "The Hell Field",
+    "creator": "Stormfly and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 25.429,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "94",
+    "rank": 94,
+    "name": "Ziroikabi",
+    "creator": "MikeWheelerFan",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 25.048,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "95",
+    "rank": 95,
+    "name": "Furious Flames",
+    "creator": "Eggnog and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 24.672,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "96",
+    "rank": 96,
+    "name": "Fractured Dreams",
+    "creator": "nhay",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 24.303,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "97",
+    "rank": 97,
+    "name": "Voltage",
+    "creator": "Hypno and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 23.938,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "98",
+    "rank": 98,
+    "name": "Auditory Breaker",
+    "creator": "LazerBlitz and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 23.579,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "99",
+    "rank": 99,
+    "name": "Worse Trip",
+    "creator": "Loltad",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 23.225,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "100",
+    "rank": 100,
+    "name": "milo",
+    "creator": "xSlendy",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 22.876,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "101",
+    "rank": 101,
+    "name": "SubSonic",
+    "creator": "ViPriN and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 22.532,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "102",
+    "rank": 102,
+    "name": "Audio Expulsion",
+    "creator": "GoodSmile and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 22.193,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "103",
+    "rank": 103,
+    "name": "Dolos",
+    "creator": "Enezux and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 21.859,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "104",
+    "rank": 104,
+    "name": "Anoxysm",
+    "creator": "Lemons",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 21.529,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "105",
+    "rank": 105,
+    "name": "The Cellar Path",
+    "creator": "JamAttack",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 21.204,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "106",
+    "rank": 106,
+    "name": "The Hell Inferno",
+    "creator": "Stormfly and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 20.883,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "107",
+    "rank": 107,
+    "name": "Endless Dream",
+    "creator": "DreamTide",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 20.567,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "108",
+    "rank": 108,
+    "name": "The Hell World",
+    "creator": "Stormfly and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 20.254,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "109",
+    "rank": 109,
+    "name": "Athanatos",
+    "creator": "Exenity and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 19.946,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "110",
+    "rank": 110,
+    "name": "Loose Screws",
+    "creator": "Aeyooo",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 19.642,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "111",
+    "rank": 111,
+    "name": "New Record",
+    "creator": "Temp and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 19.341,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "112",
+    "rank": 112,
+    "name": "Wild Rose",
+    "creator": "Galaxxyss",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 19.045,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "113",
+    "rank": 113,
+    "name": "project girlboss",
+    "creator": "koko43",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 18.752,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "114",
+    "rank": 114,
+    "name": "RASH",
+    "creator": "Loltad",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 18.463,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "115",
+    "rank": 115,
+    "name": "Removed Submission",
+    "creator": "WHErwin",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 18.178,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "116",
+    "rank": 116,
+    "name": "Mystic",
+    "creator": "Endlevel and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 17.896,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "117",
+    "rank": 117,
+    "name": "hot rod",
+    "creator": "stcubing",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 17.618,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "118",
+    "rank": 118,
+    "name": "WcropoliX",
+    "creator": "BlassCFB",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 17.343,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "119",
+    "rank": 119,
+    "name": "Turbulent Valley",
+    "creator": "TwisterDude161 and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 17.071,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "120",
+    "rank": 120,
+    "name": "The Hell Origin",
+    "creator": "Sohn0924 and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 16.803,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "121",
+    "rank": 121,
+    "name": "OneAttempt",
+    "creator": "TheRealXFuture",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 16.538,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "122",
+    "rank": 122,
+    "name": "DARKENED",
+    "creator": "BIANOX and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 16.276,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "123",
+    "rank": 123,
+    "name": "Coolie Mazie Paloozi",
+    "creator": "akunakunn",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 16.017,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "124",
+    "rank": 124,
+    "name": "Carnage Mode",
+    "creator": "Findexi and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 15.761,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "125",
+    "rank": 125,
+    "name": "Poltergeist Reborn",
+    "creator": "ThePrimeEvil",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 15.508,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "126",
+    "rank": 126,
+    "name": "Falcon16",
+    "creator": "LIEB and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 15.258,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "127",
+    "rank": 127,
+    "name": "Blade of Justice",
+    "creator": "Manix648 and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 15.01,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "128",
+    "rank": 128,
+    "name": "Nautilus",
+    "creator": "Tabgnid",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 14.766,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "129",
+    "rank": 129,
+    "name": "Phobos",
+    "creator": "gmdsean and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 14.524,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "130",
+    "rank": 130,
+    "name": "Silentium Gradas",
+    "creator": "Metalface221 and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 14.285,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "131",
+    "rank": 131,
+    "name": "Intrusive ID",
+    "creator": "Pasiblitz",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 14.049,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "132",
+    "rank": 132,
+    "name": "EXPLICIT",
+    "creator": "Renn241",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 13.815,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "133",
+    "rank": 133,
+    "name": "Infinite Inversion",
+    "creator": "Filqh",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 13.584,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "134",
+    "rank": 134,
+    "name": "Sakupen Hell",
+    "creator": "Noobas",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 13.355,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "135",
+    "rank": 135,
+    "name": "Artifice",
+    "creator": "f3lixsram and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 13.128,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "136",
+    "rank": 136,
+    "name": "Tenth Circle",
+    "creator": "DeniPol and NormDanchik",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 12.904,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "137",
+    "rank": 137,
+    "name": "SANTA FE",
+    "creator": "JoacoPe",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 12.683,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "138",
+    "rank": 138,
+    "name": "Fusion Z",
+    "creator": "Manix648 and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 12.464,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "139",
+    "rank": 139,
+    "name": "Carcano",
+    "creator": "Asuith and TomsoN",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 12.247,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "140",
+    "rank": 140,
+    "name": "Untitled",
+    "creator": "iiLuna and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 12.032,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "141",
+    "rank": 141,
+    "name": "The Hell Bird",
+    "creator": "Havok and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 11.82,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "142",
+    "rank": 142,
+    "name": "Atmosphere",
+    "creator": "VoidSquad",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 11.609,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "143",
+    "rank": 143,
+    "name": "OPSM1",
+    "creator": "Varse",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 11.401,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "144",
+    "rank": 144,
+    "name": "Molten Mercury",
+    "creator": "ItsHybrid and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 11.195,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "145",
+    "rank": 145,
+    "name": "Biohazard",
+    "creator": "ARtu and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 10.991,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "146",
+    "rank": 146,
+    "name": "Astrophobia",
+    "creator": "Jakalope and more",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 10.789,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "147",
+    "rank": 147,
+    "name": "Omorfia",
+    "creator": "HHyper",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 10.589,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "148",
+    "rank": 148,
+    "name": "Sysmique Locked",
+    "creator": "jakerz95",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 10.391,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "149",
+    "rank": 149,
+    "name": "gravity",
+    "creator": "Kaza and slayerkirb",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 10.195,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
+  },
+  {
+    "id": "150",
+    "rank": 150,
+    "name": "MOTOR MOGOK",
+    "creator": "akunakunn",
+    "verifier": "Unknown",
+    "publisher": "Unknown",
+    "points": 10.0,
+    "video": "dQw4w9WgXcQ",
+    "minPercent": 60,
+    "history": [],
+    "legacy": false
   }
-
-  function init(){
-    load();
+],
+    pending: [],
+    records: [
+  {
+    "demonId": "1",
+    "player": "worstgdplayer",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "2",
+    "player": "dze",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "3",
+    "player": "worstgdplayer",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "4",
+    "player": "bbboat",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "5",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "6",
+    "player": "YourRFriend",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "7",
+    "player": "swizzzleJ",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "7",
+    "player": "Zathral",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "8",
+    "player": "DeathCraft",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "9",
+    "player": "bbboat",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "10",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "11",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "12",
+    "player": "Alphanumeric",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "13",
+    "player": "Gabozo",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "14",
+    "player": "YourRFriend",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "15",
+    "player": "dze",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "16",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "17",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "17",
+    "player": "swizzzleJ",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "17",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "18",
+    "player": "The5Sharks",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "19",
+    "player": "Gabozo",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "20",
+    "player": "swizzzleJ",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "20",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "21",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "22",
+    "player": "chikin",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "22",
+    "player": "dyst",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "22",
+    "player": "The5Sharks",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "23",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "24",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "25",
+    "player": "Raptorking1000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "26",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "27",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "28",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "29",
+    "player": "Zathral",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "30",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "31",
+    "player": "swizzzleJ",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "31",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "32",
+    "player": "dyst",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "33",
+    "player": "Alphanumeric",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "33",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "34",
+    "player": "Gabozo",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "34",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "35",
+    "player": "swizzzleJ",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "36",
+    "player": "bbboat",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "37",
+    "player": "hydronium",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "38",
+    "player": "JonnuBoiGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "39",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "40",
+    "player": "DaPwnMachine",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "40",
+    "player": "Gabozo",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "41",
+    "player": "soon",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "41",
+    "player": "choof",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "41",
+    "player": "Perces",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "41",
+    "player": "dyst",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "42",
+    "player": "Perces",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "43",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "44",
+    "player": "Prometheus",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "45",
+    "player": "swizzzleJ",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "45",
+    "player": "Gabozo",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "45",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "45",
+    "player": "Alphanumeric",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "45",
+    "player": "Prometheus",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "45",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "45",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "45",
+    "player": "Jatheniel",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "45",
+    "player": "DaPwnMachine",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "45",
+    "player": "Perces",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "45",
+    "player": "Raptorking1000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "46",
+    "player": "Raptorking1000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "47",
+    "player": "swizzzleJ",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "47",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "47",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "47",
+    "player": "Raptorking1000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "48",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "48",
+    "player": "Lollyface100",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "48",
+    "player": "The5Sharks",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "48",
+    "player": "AerialShard",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "48",
+    "player": "bbboat",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "48",
+    "player": "Perces",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "48",
+    "player": "kde",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "49",
+    "player": "dyst",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "50",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "51",
+    "player": "chikin",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "52",
+    "player": "DaPwnMachine",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "53",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "54",
+    "player": "swizzzleJ",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "55",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "56",
+    "player": "Zathral",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "56",
+    "player": "Catsium",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "57",
+    "player": "swizzzleJ",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "57",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "57",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "58",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "59",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "60",
+    "player": "AerialShard",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "61",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "62",
+    "player": "hydronium",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "62",
+    "player": "chikin",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "63",
+    "player": "swizzzleJ",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "63",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "63",
+    "player": "Perces",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "64",
+    "player": "AerialShard",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "65",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "65",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "66",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "67",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "67",
+    "player": "Alphanumeric",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "68",
+    "player": "hydronium",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "69",
+    "player": "Perces",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "70",
+    "player": "swizzzleJ",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "70",
+    "player": "Noonegaming38",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "70",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "70",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "71",
+    "player": "JonnuBoiGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "72",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "72",
+    "player": "AerialShard",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "73",
+    "player": "bbboat",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "74",
+    "player": "worstgdplayer",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "74",
+    "player": "AerialShard",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "75",
+    "player": "Auroras",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "76",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "77",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "77",
+    "player": "swizzzleJ",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "77",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "77",
+    "player": "Prometheus",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "77",
+    "player": "AerialShard",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "78",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "78",
+    "player": "Raptorking1000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "78",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "78",
+    "player": "dze",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "79",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "79",
+    "player": "Gabozo",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "80",
+    "player": "DeathCraft",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "80",
+    "player": "chikin",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "81",
+    "player": "Jatheniel",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "81",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "82",
+    "player": "Auroras",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "82",
+    "player": "Raptorking1000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "83",
+    "player": "Raptorking1000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "84",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "84",
+    "player": "AerialShard",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "85",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "86",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "87",
+    "player": "Auroras",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "88",
+    "player": "The5Sharks",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "89",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "89",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "89",
+    "player": "DaPwnMachine",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "90",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "91",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "92",
+    "player": "Prometheus",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "93",
+    "player": "Prometheus",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "94",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "95",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "96",
+    "player": "The5Sharks",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "97",
+    "player": "chikin",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "97",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "98",
+    "player": "swizzzleJ",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "98",
+    "player": "Blloopy",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "98",
+    "player": "Alphanumeric",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "98",
+    "player": "Prometheus",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "98",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "98",
+    "player": "Catsium",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "98",
+    "player": "DaPwnMachine",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "98",
+    "player": "Raptorking1000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "99",
+    "player": "chikin",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "100",
+    "player": "AerialShard",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "101",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "101",
+    "player": "Raptorking1000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "102",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "103",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "104",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "105",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "106",
+    "player": "Prometheus",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "107",
+    "player": "Raptorking1000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "107",
+    "player": "The5Sharks",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "108",
+    "player": "Prometheus",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "109",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "109",
+    "player": "Gabozo",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "109",
+    "player": "gren",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "110",
+    "player": "JonnuBoiGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "110",
+    "player": "chikin",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "111",
+    "player": "Alphanumeric",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "112",
+    "player": "chikin",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "112",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "113",
+    "player": "chikin",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "113",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "114",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "114",
+    "player": "chikin",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "115",
+    "player": "Rozz",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "115",
+    "player": "Alphanumeric",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "115",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "116",
+    "player": "Raptorking1000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "117",
+    "player": "AerialShard",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "117",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "117",
+    "player": "The5Sharks",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "117",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "117",
+    "player": "worstgdplayer",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "118",
+    "player": "Gabozo",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "119",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "120",
+    "player": "Prometheus",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "121",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "122",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "123",
+    "player": "JonnuBoiGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "123",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "123",
+    "player": "chikin",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "123",
+    "player": "dyst",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "123",
+    "player": "AerialShard",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "123",
+    "player": "Kruxxdd",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "124",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "125",
+    "player": "DaPwnMachine",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "126",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "126",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "127",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "127",
+    "player": "swizzzleJ",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "127",
+    "player": "Auroras",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "127",
+    "player": "Alphanumeric",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "127",
+    "player": "bbboat",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "127",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "128",
+    "player": "Charan8364",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "129",
+    "player": "Blloopy",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "129",
+    "player": "swizzzleJ",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "130",
+    "player": "Prometheus",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "130",
+    "player": "YourRFriend",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "131",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "132",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "132",
+    "player": "ElectricNJ",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "132",
+    "player": "AerialShard",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "133",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "133",
+    "player": "DaPwnMachine",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "134",
+    "player": "AerialShard",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "134",
+    "player": "Perces",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "134",
+    "player": "worstgdplayer",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "135",
+    "player": "Auroras",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "136",
+    "player": "Alphanumeric",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "136",
+    "player": "DaPwnMachine",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "137",
+    "player": "JonnuBoiGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "138",
+    "player": "Auroras",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "139",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "139",
+    "player": "Charan8364",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "139",
+    "player": "Alphanumeric",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "139",
+    "player": "Jatheniel",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "139",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "140",
+    "player": "dyst",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "140",
+    "player": "AerialShard",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "141",
+    "player": "Prometheus",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "142",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "143",
+    "player": "AerialShard",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "143",
+    "player": "bbboat",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "144",
+    "player": "Ninjacat9000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "145",
+    "player": "hperm",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "146",
+    "player": "DaPwnMachine",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "147",
+    "player": "fJupiter",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "148",
+    "player": "JonnuBoiGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "149",
+    "player": "Auroras",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "149",
+    "player": "spoonGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "149",
+    "player": "scape",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "149",
+    "player": "Raptorking1000",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
+  },
+  {
+    "demonId": "150",
+    "player": "JonnuBoiGD",
+    "progress": 100,
+    "date": "2024-06-01",
+    "video": "#",
+    "notes": ""
   }
-
-  function initApp(){
-    document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();showView(a.dataset.view);document.getElementById('navLinks').classList.remove('open')}));
-    document.getElementById('menuToggle').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));
-    renderList('mainListTable','demonDetailMain',1,75);
-    renderList('extendedListTable','demonDetailExtended',76,150);
-    renderList('legacyListTable','demonDetailLegacy',1,999,true);
-    populateSubmit();
-    renderChangelog();
-
-    document.getElementById('recordForm').addEventListener('submit',e=>{
-      e.preventDefault();
-      const demonNameInput=document.getElementById('demonSelect').value.trim();
-      const demon=data.demons.find(d=>d.name.toLowerCase()===demonNameInput.toLowerCase());
-      if(!demon){ showMsg(`Level "${demonNameInput}" not found. Please enter the exact name.`,true); return; }
-      const demonId = demon.id;
-      const player=document.getElementById('playerName').value.trim();
-      const progress=+document.getElementById('progress').value;
-      const video=document.getElementById('videoUrl').value.trim();
-      if(progress < demon.minPercent){ showMsg(`Minimum ${demon.minPercent}% required for ${demon.name}`,true); return; }
-      const sgChecked = document.getElementById('sgCitizen').checked;
-      if(!sgChecked){ showMsg('You must confirm the player is Singaporean',true); return; }
-      const record = {id:Date.now(),demonId,demonName:demon.name,player,progress,videoUrl:video,rawUrl:document.getElementById('rawUrl').value.trim(),notes:document.getElementById('notes').value.trim(),sg:sgChecked,status:'pending',date:new Date().toISOString().slice(0,10)};
-      data.pending.push(record);
-      save(); renderPending(); e.target.reset(); document.getElementById('sgCitizen').checked=true;
-      
-      // Discord notification via proxy (fixes CORS)
-      const PROXY_URL = 'https://sg-demonlist.trxk01.workers.dev'; // your deployed worker
-      
-      if(PROXY_URL){
-        fetch(PROXY_URL, {
-          method:'POST',
-          headers:{'Content-Type':'application/json'},
-          body: JSON.stringify({
-            username: 'SG Demonlist',
-            content: null,
-            embeds: [{
-              title: '🇸🇬 New Record Submission',
-              color: 16733525,
-              fields: [
-                {name:'Player', value: player, inline:true},
-                {name:'Demon', value: `${demon.name} (#${demon.rank})`, inline:true},
-                {name:'Progress', value: progress + '%', inline:true},
-                {name:'Video', value: video || 'None'},
-                {name:'Raw', value: record.rawUrl || 'None'},
-                {name:'Notes', value: record.notes || 'None'},
-                {name:'Date', value: record.date, inline:true}
-              ],
+],
               timestamp: new Date().toISOString()
             }]
           })
