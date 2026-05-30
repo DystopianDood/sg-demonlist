@@ -164,7 +164,7 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
         <h2 style="margin-top:0">Submit Record</h2>
         <p style="color:var(--text-dim);font-size:14px">Submissions follow pointercrate guidelines. Only Singapore citizens/PRs are counted for national ranking. All records are reviewed by SG list mods.</p>
         <form id="recordForm" style="margin-top:20px">
-          <label>Demon Name<input id="demonSelect" required placeholder="Enter exact level name (e.g. Sevvend Clubstep)" list="demonDataList"></label><datalist id="demonDataList"></datalist>
+          <label>Demon Name<input id="demonSelect" required placeholder="Enter any level name (e.g. Sevvend Clubstep)" list="demonDataList"></label><datalist id="demonDataList"></datalist>
           <div style="display:grid;grid-template-columns:1fr 130px;gap:12px">
             <label>Player Name<input id="playerName" required placeholder="EthanL" pattern="[A-Za-z0-9_ ]{3,20}"></label>
             <label>Progress %<input id="progress" type="number" min="1" max="100" required placeholder="100"></label>
@@ -495,14 +495,16 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
     const rawUrl = document.getElementById('rawUrl').value;
     const notes = document.getElementById('notes').value;
 
+    // Check if it's an existing demon, but don't reject it if it isn't
     const demon = data.demons.find(d => d.name.toLowerCase() === demonName.toLowerCase());
-    if (!demon) {
-      showMsg('Demon not found. Please select from the exact level name.', true);
-      return;
-    }
+    
+    // Set fallbacks for custom entries
+    const finalDemonName = demon ? demon.name : demonName;
+    const finalDemonRank = demon ? `(#${demon.rank})` : "(Unranked/Custom)";
+    const finalDemonId = demon ? demon.id : "custom-" + Date.now();
 
     const payload = {
-      content: `🚨 **New Record Submission** 🚨\n**Player:** ${playerName}\n**Demon:** ${demon.name} (#${demon.rank})\n**Progress:** ${progress}%\n**Video:** ${videoUrl}\n**Raw:** ${rawUrl || 'N/A'}\n**Notes:** ${notes || 'None'}`
+      content: `🚨 **New Record Submission** 🚨\n**Player:** ${playerName}\n**Demon:** ${finalDemonName} ${finalDemonRank}\n**Progress:** ${progress}%\n**Video:** ${videoUrl}\n**Raw:** ${rawUrl || 'N/A'}\n**Notes:** ${notes || 'None'}`
     };
 
     try {
@@ -515,8 +517,14 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
       }
 
       data.pending.push({
-        demonId: demon.id, demonName: demon.name, player: playerName, progress, video: videoUrl, status: 'Pending Review'
+        demonId: finalDemonId, 
+        demonName: finalDemonName, 
+        player: playerName, 
+        progress, 
+        video: videoUrl, 
+        status: 'Pending Review'
       });
+      
       saveData();
       renderPending();
       e.target.reset();
