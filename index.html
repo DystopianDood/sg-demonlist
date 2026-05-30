@@ -316,14 +316,20 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
   }
 
   function renderList(tableId, detailId, minR, maxR, isLegacy = false) {
-    const table = document.getElementById(tableId);
-    if (!table) return;
+  const table = document.getElementById(tableId);
+  if (!table) return;
 
-    const demons = isLegacy 
-      ? data.demons.filter(d => d.legacy) 
-      : data.demons.filter(d => d.rank >= minR && d.rank <= maxR && !d.legacy).sort((a, b) => a.rank - b.rank);
+  const demons = isLegacy 
+    ? data.demons.filter(d => d.legacy) 
+    : data.demons.filter(d => d.rank >= minR && d.rank <= maxR && !d.legacy).sort((a, b) => a.rank - b.rank);
 
-    table.innerHTML = `<tbody>${demons.map(d => `<tr data-id="${d.id}"><td class="rank">#${d.rank}</td><td class="name">${d.name}</td><td class="creator">${d.creator}</td></tr>`).join('')}</tbody>`;
+  table.innerHTML = `<tbody>${demons.map(d => `
+    <tr data-id="${d.id}">
+      <td class="rank">${isLegacy ? 'Legacy' : '#' + d.rank}</td>
+      <td class="name">${d.name}</td>
+      <td class="creator">${d.creator}</td>
+      ${isLegacy ? `<td class="points">${d.victors.length}</td>` : ''}
+    </tr>`).join('')}</tbody>`;
 
     const rows = table.querySelectorAll('tr');
     rows.forEach(r => r.addEventListener('click', () => {
