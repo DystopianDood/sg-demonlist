@@ -1949,6 +1949,435 @@
       "minPercent": 60,
       "history": [],
       "legacy": false
+    },
+    {
+      "id": "151",
+      "rank": "Legacy",
+      "name": "Motorbreath",
+      "creator": "TwisterDude161",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 1,
+      "victors": [
+        "spoonGD"
+      ]
+    },
+    {
+      "id": "152",
+      "rank": "Legacy",
+      "name": "Ecstasy",
+      "creator": "SleyGD",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 2,
+      "victors": [
+        "Noonegaming38",
+        "spoonGD"
+      ]
+    },
+    {
+      "id": "153",
+      "rank": "Legacy",
+      "name": "Bloodbath",
+      "creator": "Riot and more",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 22,
+      "victors": [
+        "Joash",
+        "swizzzleJ",
+        "Blloopy",
+        "Rozz",
+        "Ninjacat9000",
+        "Auroras",
+        "Gabozo",
+        "Alphanumeric",
+        "BlastingDuck",
+        "ElectricNJ",
+        "Prometheus",
+        "dze",
+        "spoonGD",
+        "Raptorking1000",
+        "scape",
+        "The5Sharks",
+        "DaPwnMachine",
+        "bbboat",
+        "Perces",
+        "gren",
+        "Jatheniel",
+        "SweetDreams"
+      ]
+    },
+    {
+      "id": "154",
+      "rank": "Legacy",
+      "name": "Idols",
+      "creator": "Zafkiel7 and more",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 5,
+      "victors": [
+        "hpesoj",
+        "Zathral",
+        "spoonGD",
+        "Perces",
+        "gren"
+      ]
+    },
+    {
+      "id": "155",
+      "rank": "Legacy",
+      "name": "moment",
+      "creator": "lexycat and icedcave",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 9,
+      "victors": [
+        "Auroras",
+        "spoonGD",
+        "dze",
+        "AerialShard",
+        "Jatheniel",
+        "dyst",
+        "scape",
+        "bbboat",
+        "Perces"
+      ]
+    },
+    {
+      "id": "156",
+      "rank": "Legacy",
+      "name": "Quaoar",
+      "creator": "ViPriN and more",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 3,
+      "victors": [
+        "The5Sharks",
+        "spoonGD",
+        "bbboat"
+      ]
+    },
+    {
+      "id": "157",
+      "rank": "Legacy",
+      "name": "ATMarbl",
+      "creator": "Pennutoh and more",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 1,
+      "victors": [
+        "spoonGD"
+      ]
+    },
+    {
+      "id": "158",
+      "rank": "Legacy",
+      "name": "The Hell Factory",
+      "creator": "TeamN2",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 2,
+      "victors": [
+        "swizzzleJ",
+        "Blloopy"
+      ]
+    },
+    {
+      "id": "159",
+      "rank": "Legacy",
+      "name": "Down Bass",
+      "creator": "Spectra",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 3,
+      "victors": [
+        "swizzzleJ",
+        "Prometheus",
+        "DaPwnMachine"
+      ]
+    },
+    {
+      "id": "160",
+      "rank": "Legacy",
+      "name": "PROTOFLICKER",
+      "creator": "ewop and more",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 1,
+      "victors": [
+        "scape"
+      ]
+    },
+    {
+      "id": "161",
+      "rank": "Legacy",
+      "name": "cave of heart",
+      "creator": "ImMaxX1 and Onvil",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 1,
+      "victors": [
+        "spoonGD"
+      ]
+    },
+    {
+      "id": "162",
+      "rank": "Legacy",
+      "name": "OUTPUT SPRING",
+      "creator": "TheRealXFuture",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 1,
+      "victors": [
+        "spoonGD"
+      ]
+    },
+    {
+      "id": "163",
+      "rank": "Legacy",
+      "name": "Prismatic Haze",
+      "creator": "Cirtrax and Gizbro",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 5,
+      "victors": [
+        "spoonGD",
+        "sussiestimpostor",
+        "Zathral",
+        "scape",
+        "AerialShard"
+      ]
+    },
+    {
+      "id": "164",
+      "rank": "Legacy",
+      "name": "Heavens Door",
+      "creator": "TMco",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 4,
+      "victors": [
+        "spoonGD",
+        "Catsium",
+        "Alphanumeric",
+        "AerialShard"
+      ]
+    },
+    {
+      "id": "165",
+      "rank": "Legacy",
+      "name": "A Bizarre Phantasm",
+      "creator": "TeamN2",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 4,
+      "victors": [
+        "Joash",
+        "Blloopy",
+        "Prometheus",
+        "swizzzleJ"
+      ]
+    },
+    {
+      "id": "166",
+      "rank": "Legacy",
+      "name": "Conical Depression",
+      "creator": "KrmaL",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 1,
+      "victors": [
+        "spoonGD"
+      ]
+    },
+    {
+      "id": "167",
+      "rank": "Legacy",
+      "name": "Triple Six",
+      "creator": "Zylenox",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 1,
+      "victors": [
+        "Kruxxdd"
+      ]
+    },
+    {
+      "id": "168",
+      "rank": "Legacy",
+      "name": "Inflective",
+      "creator": "Mojitoz and more",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 1,
+      "victors": [
+        "AerialShard"
+      ]
+    },
+    {
+      "id": "169",
+      "rank": "Legacy",
+      "name": "SL8O",
+      "creator": "SleyGD",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 1,
+      "victors": [
+        "spoonGD"
+      ]
+    },
+    {
+      "id": "170",
+      "rank": "Legacy",
+      "name": "FLAMETHROWER",
+      "creator": "kreno",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 1,
+      "victors": [
+        "JonnuBoiGD"
+      ]
+    },
+    {
+      "id": "171",
+      "rank": "Legacy",
+      "name": "i hate renn",
+      "creator": "Renn241",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 2,
+      "victors": [
+        "spoonGD",
+        "AerialShard"
+      ]
+    },
+    {
+      "id": "172",
+      "rank": "Legacy",
+      "name": "QDYNAMIX",
+      "creator": "Valentine and more",
+      "verifier": "Unknown",
+      "publisher": "Unknown",
+      "points": 1,
+      "video": "",
+      "minPercent": 100,
+      "history": [],
+      "legacy": true,
+      "victorCount": 6,
+      "victors": [
+        "AerialShard",
+        "spoonGD",
+        "JonnuBoiGD",
+        "scape",
+        "chikin",
+        "dyst"
+      ]
     }
   ],
   "records": [
@@ -4028,8 +4457,312 @@
   "players": [],
   "changelog": [
     {
-      "date": "2024-06-01",
-      "text": "Original list imported"
+      "date": "2026-05-26",
+      "text": "The Golden added at #4"
+    },
+    {
+      "date": "2026-05-23",
+      "text": "Congregation added at #24"
+    },
+    {
+      "date": "2026-05-03",
+      "text": "LUMINA added at #44"
+    },
+    {
+      "date": "2026-04-26",
+      "text": "Diamond Disco added at #71"
+    },
+    {
+      "date": "2026-04-25",
+      "text": "Sevvend Clubstep added at #1; Jigsaw added at #3"
+    },
+    {
+      "date": "2026-04-04",
+      "text": "Nautilus added at #122"
+    },
+    {
+      "date": "2026-04-02",
+      "text": "shimmer added at #7; Framework added at #55; Sysmique Locked added at #141"
+    },
+    {
+      "date": "2026-03-29",
+      "text": "ConClusion added at #6; Shutdown added at #31; Crystal added at #65; Quantum Theory added at #49; Turbulent Valley added at #111"
+    },
+    {
+      "date": "2026-03-11",
+      "text": "Molten Core added at #43; Devil Vortex added at #50"
+    },
+    {
+      "date": "2026-03-04",
+      "text": "ConTroller added at #29"
+    },
+    {
+      "date": "2026-02-25",
+      "text": "Dolos added at #86"
+    },
+    {
+      "date": "2026-02-18",
+      "text": "lovel added at #53"
+    },
+    {
+      "date": "2026-02-07",
+      "text": "ta1LSD0II added at #10; Ethereal Artifice added at #60; Hyper Paracosm added at #30; Poltergeist Reborn added at #103; Astrophobia added at #123; Cybernetic Crescent added at #32; Killbot added at #53"
+    },
+    {
+      "date": "2026-01-31",
+      "text": "ATOMIC CANNON added at #20; Shmarley Ville added at #35; ATMarbl added at #128"
+    },
+    {
+      "date": "2026-01-24",
+      "text": "Axiom Asterism moved to #6; Call Me Maybe added at #10; TheCinnyBun added at #44; CLOWNS added at #140"
+    },
+    {
+      "date": "2026-01-11",
+      "text": "Balengu Vortex added at #63"
+    },
+    {
+      "date": "2026-01-07",
+      "text": "MINIMUM added at #142"
+    },
+    {
+      "date": "2025-12-30",
+      "text": "Shardscapes added at #11"
+    },
+    {
+      "date": "2025-12-22",
+      "text": "OPSM1 added at #110; FLAMETHROWER added at #133"
+    },
+    {
+      "date": "2025-12-08",
+      "text": "The Reaper added at #38"
+    },
+    {
+      "date": "2025-12-06",
+      "text": "Sakupen Hell placed at #94; Intrusive ID added at #93; Axiom Asterism added at #10; Rate Demon added at #57; Carnage Mode added at #91; Various position moves"
+    },
+    {
+      "date": "2025-11-21",
+      "text": "Triple Six placed at #122; Worse Trip placed at #67"
+    },
+    {
+      "date": "2025-11-10",
+      "text": "gardening map placed at #121"
+    },
+    {
+      "date": "2025-11-02",
+      "text": "Edelweiss placed at #44"
+    },
+    {
+      "date": "2025-10-27",
+      "text": "Infinite Inversion added at #94"
+    },
+    {
+      "date": "2025-10-26",
+      "text": "Fractured Dreams added at #64; Black Blizzard moved to #49; project girlboss moved to #77"
+    },
+    {
+      "date": "2025-10-20",
+      "text": "Awedsy added at #14"
+    },
+    {
+      "date": "2025-10-18",
+      "text": "Black Flag added at #47"
+    },
+    {
+      "date": "2025-10-11",
+      "text": "Inflective added at #111; Sky Conflux moved to #143"
+    },
+    {
+      "date": "2025-10-04",
+      "text": "gravity added at #99; Ghoul moved to #19"
+    },
+    {
+      "date": "2025-10-01",
+      "text": "Various position swaps and moves for Freedom08, Cadrega City, The Hell Field, Quantum Processing, Night Rider, distraught, MISFIRE, Void Wave, The Hell Zone, Coolie Mazie Paloozi, Removed Submission, Wcropolix, OneAttempt, DARKENED, Tenth Circle, SANTA FE, Biohazard, The Hell Factory, The Hell Bird, Down Bass, cave of heart, Esencia, cytokinesis, The Hell Dignity, Welcome to GD News, TORNADO, Glide, Quaoar"
+    },
+    {
+      "date": "2025-09-30",
+      "text": "Sink added at #25"
+    },
+    {
+      "date": "2025-09-19",
+      "text": "super probably level added at #30; Voltage added at #58; nowdead added at #137"
+    },
+    {
+      "date": "2025-09-16",
+      "text": "Waterfall added at #1; SARY NEVER CLEAR added at #8; qoUEO moved to #7"
+    },
+    {
+      "date": "2025-09-06",
+      "text": "Faded Dream added at #50"
+    },
+    {
+      "date": "2025-09-03",
+      "text": "Trueffet added at #1"
+    },
+    {
+      "date": "2025-09-02",
+      "text": "Hard Machine added at #2"
+    },
+    {
+      "date": "2025-08-28",
+      "text": "Wild Rose added at #65"
+    },
+    {
+      "date": "2025-08-05",
+      "text": "Ghoul added at #11"
+    },
+    {
+      "date": "2025-08-02",
+      "text": "Instant Execution added at #131; Astral Divinity added at #42; Endless Dream added at #57; Sigma Interface added at #102; Mystic added at #66; Sigma added at #10"
+    },
+    {
+      "date": "2025-07-20",
+      "text": "Untitled added at #79; Manic Machine added at #121"
+    },
+    {
+      "date": "2025-07-11",
+      "text": "Shukufuku added at #132"
+    },
+    {
+      "date": "2025-07-06",
+      "text": "SANTA FE added at #93; Loose Screws added at #59; WcropoliX added at #66; Warning added at #119; Dismay added at #123"
+    },
+    {
+      "date": "2025-07-05",
+      "text": "Maybe Possibly Thing added at #114"
+    },
+    {
+      "date": "2025-06-01",
+      "text": "project girlboss added at #52"
+    },
+    {
+      "date": "2025-05-18",
+      "text": "OUTPUT SPRING added at #93; Neurostasis added at #40"
+    },
+    {
+      "date": "2025-05-02",
+      "text": "Kuzureta added at #22"
+    },
+    {
+      "date": "2025-04-21",
+      "text": "rosedynamix added at #46; The Cellar Path added at #51"
+    },
+    {
+      "date": "2025-04-05",
+      "text": "OneAttempt added at #60"
+    },
+    {
+      "date": "2025-04-04",
+      "text": "RIVERS OF NAZARETH added at #137; VIRTUE added at #109; Wacky McWhackface v2 added at #114; \u0396\u0391\u03a1HKIEL added at #31; Only Cub3 added at #131; Motorbreath added at #75; SL8O added at #85; Pound Town added at #126"
+    },
+    {
+      "date": "2025-02-23",
+      "text": "Hopping Over Puddles added at #112; Retention Rush added at #28; Legacy levels now award 1 point per level"
+    },
+    {
+      "date": "2025-02-02",
+      "text": "Ziroikabi added at #42"
+    },
+    {
+      "date": "2025-01-31",
+      "text": "hot rod added at #54"
+    },
+    {
+      "date": "2025-01-27",
+      "text": "Cobwebs added at #6; Belloq added at #33"
+    },
+    {
+      "date": "2025-01-12",
+      "text": "Celestial Force added at #26"
+    },
+    {
+      "date": "2024-12-23",
+      "text": "MISFIRE added at #32; Clarity added at #150; Falcon16 added at #49; The First added at #81; distraught added at #34; Make It Drop added at #147; Backlights added at #132; Miscellaneous Memory added at #143; MOTOR MOGOK added at #62; Coolie Mazie Paloozi added at #42; Furious Flames added at #37; Anoxysm added at #41; Bausha Vortex added at #34; Friday Vortex added at #23"
+    },
+    {
+      "date": "2024-12-22",
+      "text": "Cat Planet added at #86; Niflheim added at #87; RASH added at #43; Psychotic added at #116; Daydream added at #95; Sky Conflux added at #107; RTX ON added at #115"
+    },
+    {
+      "date": "2024-10-27",
+      "text": "Forbidden Isle added at #135; Tenth Circle added at #45; Anya III added at #141; Sinister Incision added at #33; phantasmagoria added at #134; Overtime added at #75; Disruption added at #134; Flappy Dynamix II added at #148"
+    },
+    {
+      "date": "2024-10-26",
+      "text": "Tons of placements updated; Quantum Processing added at #28; Visible Ray added at #12"
+    },
+    {
+      "date": "2024-09-05",
+      "text": "BLACKLIGHTS added at #105; Stalemate Redux added at #25; Audio Expulsion added at #34"
+    },
+    {
+      "date": "2024-07-01",
+      "text": "xo added at #20; Final Epilogue added at #142"
+    },
+    {
+      "date": "2024-05-25",
+      "text": "Cognition added at #4"
+    },
+    {
+      "date": "2024-05-11",
+      "text": "GLISTEN added at #117; TORNADO added at #78"
+    },
+    {
+      "date": "2024-04-23",
+      "text": "The Yandere moved to #11"
+    },
+    {
+      "date": "2024-04-14",
+      "text": "ABSURDIA added at #107; Cold Sweat added at #3"
+    },
+    {
+      "date": "2024-04-10",
+      "text": "ChopStep added at #74"
+    },
+    {
+      "date": "2024-04-05",
+      "text": "SIGSEGV added at #135; Delirium Tremens and Mystic Bounds swapped; QDYNAMIX added at #71"
+    },
+    {
+      "date": "2024-03-23",
+      "text": "Conical Depression added at #60"
+    },
+    {
+      "date": "2024-03-14",
+      "text": "STRATUS added at #120; CITRA added at #6; DARKENED added at #35; Arctic Lights and AKIRA swapped"
+    },
+    {
+      "date": "2024-03-03",
+      "text": "Welcome To GD News added at #69"
+    },
+    {
+      "date": "2024-02-25",
+      "text": "Gunslinga Corridor added at #131; TANTRUM added at #128"
+    },
+    {
+      "date": "2024-02-22",
+      "text": "Biohazard added at #41"
+    },
+    {
+      "date": "2024-02-13",
+      "text": "Empyrean added at #57; MY SONG added at #140"
+    },
+    {
+      "date": "2024-02-04",
+      "text": "Added 'Player Database' Sheet; List extended to include the top 150 levels"
+    },
+    {
+      "date": "2024-01-14",
+      "text": "List updated to follow AREDL placements; SubSonic added at #28; List updated to include the top 100 levels; New Record added at #27"
+    },
+    {
+      "date": "2023-12-19",
+      "text": "List extended to include the top 75 levels"
+    },
+    {
+      "date": "2023-11-28",
+      "text": "List created, top 50 levels added"
     }
   ]
 }
