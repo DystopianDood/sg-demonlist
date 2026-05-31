@@ -113,6 +113,20 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
  .demon-title{font-size:26px}
  .stat-grid{grid-template-columns:1fr 1fr}
 }
+.checkbox-label {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+  font-weight: 400 !important;
+  margin-top: 15px !important;
+  cursor: pointer !important;
+  text-transform: none !important; /* Overrides the uppercase rule for labels */
+}
+
+.checkbox-label input {
+  width: auto !important;
+  margin-top: 2px !important;
+}
 </style>
 </head>
 <body>
@@ -172,7 +186,10 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
           <label>Video URL (YouTube/Twitch)<input id="videoUrl" type="url" required placeholder="https://youtu.be/..."></label>
           <label>Raw Footage URL (optional)<input id="rawUrl" type="url" placeholder="https://..."></label>
           <label>Notes<textarea id="notes" rows="3" placeholder="Livestream VOD timestamp, etc."></textarea></label>
-          <label style="display:flex;align-items:center;gap:8px;font-weight:400"><input type="checkbox" id="sgCitizen" checked required> I confirm this player is Singaporean (Citizen/PR)</label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="sgCitizen" checked required> 
+            <span>I confirm this player is Singaporean (Citizen/PR)</span>
+          </label>
           <button class="btn" type="submit">Submit for Review</button>
         </form>
         <div id="submitMessage" style="margin-top:16px"></div>
