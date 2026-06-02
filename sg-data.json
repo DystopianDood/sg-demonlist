@@ -4170,6 +4170,15 @@
       "date": "2026-06-02",
       "notes": "First Victor / Record Holder",
       "timestamp": 1780390109301
+    },
+    {
+      "demonId": "109",
+      "player": "ketchupWTGMD",
+      "progress": 100,
+      "video": "https://www.youtube.com/watch?v=Ig-BKVebXwc",
+      "date": "2026-06-02",
+      "notes": "",
+      "timestamp": 1780390672780
     }
   ],
   "players": [
@@ -4179,7 +4188,8 @@
     "jjsbjssb",
     "Raptorking1000",
     "vender",
-    "chikin"
+    "chikin",
+    "ketchupWTGMD"
   ],
   "changelog": [
     {
