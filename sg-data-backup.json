@@ -14,8 +14,27 @@
       "legacy": false
     },
     {
-      "id": "2",
+      "id": "sonic_wave_infinity",
+      "name": "Sonic Wave Infinity",
       "rank": 2,
+      "creator": "Davphla⁩ and ⁨more⁩",
+      "verifier": "Xanii",
+      "publisher": "⁨APTeamOfficial",
+      "points": 239,
+      "video": "V98pIzzGCHk",
+      "minPercent": 100,
+      "history": [
+        {
+          "date": "2026-06-06",
+          "rank": 2,
+          "action": "placed"
+        }
+      ],
+      "legacy": false
+    },
+    {
+      "id": "2",
+      "rank": 3,
       "name": "Waterfall",
       "creator": "cherryteam",
       "verifier": "Unknown",
@@ -28,7 +47,7 @@
     },
     {
       "id": "3",
-      "rank": 3,
+      "rank": 4,
       "name": "Jigsaw",
       "creator": "NEKONGAMES and more",
       "verifier": "Unknown",
@@ -41,7 +60,7 @@
     },
     {
       "id": "4",
-      "rank": 4,
+      "rank": 5,
       "name": "The Golden",
       "creator": "BoBoBoBoBoBoBo and more",
       "verifier": "Unknown",
@@ -54,7 +73,7 @@
     },
     {
       "id": "5",
-      "rank": 5,
+      "rank": 6,
       "name": "Trueffet",
       "creator": "SyQual and Rainstorm",
       "verifier": "Unknown",
@@ -66,8 +85,27 @@
       "legacy": false
     },
     {
+      "id": "goober_rage_stage",
+      "name": "Goober Rage Stage",
+      "rank": 7,
+      "creator": "⁨bonscarrot",
+      "verifier": "⁨trenbabypaleo",
+      "publisher": "⁨bonscarrot",
+      "points": 178.2,
+      "video": "cLFs5sXizQfGvY4e",
+      "minPercent": 100,
+      "history": [
+        {
+          "date": "2026-06-06",
+          "rank": 6,
+          "action": "placed"
+        }
+      ],
+      "legacy": false
+    },
+    {
       "id": "6",
-      "rank": 6,
+      "rank": 8,
       "name": "Hard Machine",
       "creator": "Komp and more",
       "verifier": "Unknown",
@@ -80,7 +118,7 @@
     },
     {
       "id": "7",
-      "rank": 7,
+      "rank": 9,
       "name": "Zodiac",
       "creator": "BIANOX and more",
       "verifier": "Unknown",
@@ -93,7 +131,7 @@
     },
     {
       "id": "8",
-      "rank": 8,
+      "rank": 10,
       "name": "Cold Sweat",
       "creator": "para and more",
       "verifier": "Unknown",
@@ -106,7 +144,7 @@
     },
     {
       "id": "9",
-      "rank": 9,
+      "rank": 11,
       "name": "ConClusion",
       "creator": "DreamZoneGD",
       "verifier": "Unknown",
@@ -119,7 +157,7 @@
     },
     {
       "id": "10",
-      "rank": 10,
+      "rank": 12,
       "name": "shimmer",
       "creator": "amplitron",
       "verifier": "Unknown",
@@ -132,7 +170,7 @@
     },
     {
       "id": "11",
-      "rank": 11,
+      "rank": 13,
       "name": "Axiom Asterism",
       "creator": "Filqh and fusion325",
       "verifier": "Unknown",
@@ -145,7 +183,7 @@
     },
     {
       "id": "12",
-      "rank": 12,
+      "rank": 14,
       "name": "Cognition",
       "creator": "benji8080 and Endlevel",
       "verifier": "Unknown",
@@ -158,7 +196,7 @@
     },
     {
       "id": "13",
-      "rank": 13,
+      "rank": 15,
       "name": "qoUEO",
       "creator": "GhostVandalf",
       "verifier": "Unknown",
@@ -171,7 +209,7 @@
     },
     {
       "id": "14",
-      "rank": 14,
+      "rank": 16,
       "name": "SARY NEVER CLEAR",
       "creator": "Kugelblitz and more",
       "verifier": "Unknown",
@@ -184,7 +222,7 @@
     },
     {
       "id": "15",
-      "rank": 15,
+      "rank": 17,
       "name": "ta1LSD0ll",
       "creator": "ta1LSD0ll",
       "verifier": "Unknown",
@@ -197,7 +235,7 @@
     },
     {
       "id": "16",
-      "rank": 16,
+      "rank": 18,
       "name": "Call Me Maybe",
       "creator": "hawkyre",
       "verifier": "Unknown",
@@ -210,7 +248,7 @@
     },
     {
       "id": "17",
-      "rank": 17,
+      "rank": 19,
       "name": "RUST",
       "creator": "neigefeu",
       "verifier": "Unknown",
@@ -223,7 +261,7 @@
     },
     {
       "id": "18",
-      "rank": 18,
+      "rank": 20,
       "name": "Shardscapes",
       "creator": "ItzKiba",
       "verifier": "Unknown",
@@ -236,7 +274,7 @@
     },
     {
       "id": "19",
-      "rank": 19,
+      "rank": 21,
       "name": "Cobwebs",
       "creator": "NineDice",
       "verifier": "Unknown",
@@ -249,7 +287,7 @@
     },
     {
       "id": "20",
-      "rank": 20,
+      "rank": 22,
       "name": "Bloodlust",
       "creator": "Manix648 and more",
       "verifier": "Unknown",
@@ -262,7 +300,7 @@
     },
     {
       "id": "21",
-      "rank": 21,
+      "rank": 23,
       "name": "Jesse Pinkman",
       "creator": "Renn241",
       "verifier": "Unknown",
@@ -275,7 +313,7 @@
     },
     {
       "id": "22",
-      "rank": 22,
+      "rank": 24,
       "name": "X84",
       "creator": "XavT",
       "verifier": "Unknown",
@@ -288,7 +326,7 @@
     },
     {
       "id": "23",
-      "rank": 23,
+      "rank": 25,
       "name": "CITRA",
       "creator": "Varse",
       "verifier": "Unknown",
@@ -301,7 +339,7 @@
     },
     {
       "id": "24",
-      "rank": 24,
+      "rank": 26,
       "name": "Awedsy",
       "creator": "sink and SleyGD",
       "verifier": "Unknown",
@@ -314,7 +352,7 @@
     },
     {
       "id": "25",
-      "rank": 25,
+      "rank": 27,
       "name": "Congregation",
       "creator": "Presta",
       "verifier": "Unknown",
@@ -327,7 +365,7 @@
     },
     {
       "id": "26",
-      "rank": 26,
+      "rank": 28,
       "name": "Sigma",
       "creator": "MindCap and more",
       "verifier": "Unknown",
@@ -340,7 +378,7 @@
     },
     {
       "id": "27",
-      "rank": 27,
+      "rank": 29,
       "name": "Knights of Thunder",
       "creator": "HangerLord",
       "verifier": "Unknown",
@@ -353,7 +391,7 @@
     },
     {
       "id": "28",
-      "rank": 28,
+      "rank": 30,
       "name": "ATOMIC CANNON",
       "creator": "LIEB",
       "verifier": "Unknown",
@@ -366,7 +404,7 @@
     },
     {
       "id": "29",
-      "rank": 29,
+      "rank": 31,
       "name": "Nhelv",
       "creator": "SrGuillester and more",
       "verifier": "Unknown",
@@ -379,7 +417,7 @@
     },
     {
       "id": "30",
-      "rank": 30,
+      "rank": 32,
       "name": "FusionDynamix (unnerfed)",
       "creator": "twister and NukellX",
       "verifier": "Unknown",
@@ -392,7 +430,7 @@
     },
     {
       "id": "31",
-      "rank": 31,
+      "rank": 33,
       "name": "Visible Ray",
       "creator": "Krampux and more",
       "verifier": "Unknown",
@@ -405,7 +443,7 @@
     },
     {
       "id": "32",
-      "rank": 32,
+      "rank": 34,
       "name": "Ghoul",
       "creator": "XavT",
       "verifier": "Unknown",
@@ -418,7 +456,7 @@
     },
     {
       "id": "33",
-      "rank": 33,
+      "rank": 35,
       "name": "The Yandere",
       "creator": "Dorami and more",
       "verifier": "Unknown",
@@ -431,7 +469,7 @@
     },
     {
       "id": "34",
-      "rank": 34,
+      "rank": 36,
       "name": "Arctic Lights",
       "creator": "Endlevel and iIiViRuZiIi",
       "verifier": "Unknown",
@@ -444,7 +482,7 @@
     },
     {
       "id": "35",
-      "rank": 35,
+      "rank": 37,
       "name": "Spectrum Cyclone",
       "creator": "Temp",
       "verifier": "Unknown",
@@ -457,7 +495,7 @@
     },
     {
       "id": "36",
-      "rank": 36,
+      "rank": 38,
       "name": "Shutdown",
       "creator": "OliSW",
       "verifier": "Unknown",
@@ -470,7 +508,7 @@
     },
     {
       "id": "37",
-      "rank": 37,
+      "rank": 39,
       "name": "WORSTBRAINMAP",
       "creator": "bims",
       "verifier": "Unknown",
@@ -483,7 +521,7 @@
     },
     {
       "id": "38",
-      "rank": 38,
+      "rank": 40,
       "name": "ConTroller",
       "creator": "DreamZoneGD",
       "verifier": "Unknown",
@@ -496,7 +534,7 @@
     },
     {
       "id": "39",
-      "rank": 39,
+      "rank": 41,
       "name": "AKIRA",
       "creator": "Eridani and Denni",
       "verifier": "Unknown",
@@ -509,7 +547,7 @@
     },
     {
       "id": "40",
-      "rank": 40,
+      "rank": 42,
       "name": "Hyper Paracosm",
       "creator": "iIiViRuZiIi",
       "verifier": "Unknown",
@@ -522,7 +560,7 @@
     },
     {
       "id": "41",
-      "rank": 41,
+      "rank": 43,
       "name": "Wasureta",
       "creator": "crazen and more",
       "verifier": "Unknown",
@@ -535,7 +573,7 @@
     },
     {
       "id": "42",
-      "rank": 42,
+      "rank": 44,
       "name": "Cybernetic Crescent",
       "creator": "ViPriN and more",
       "verifier": "Unknown",
@@ -548,7 +586,7 @@
     },
     {
       "id": "43",
-      "rank": 43,
+      "rank": 45,
       "name": "Sink",
       "creator": "Awedsy",
       "verifier": "Unknown",
@@ -561,7 +599,7 @@
     },
     {
       "id": "44",
-      "rank": 44,
+      "rank": 46,
       "name": "Sonic Wave Rebirth",
       "creator": "Serponge and Funnygame",
       "verifier": "Unknown",
@@ -574,7 +612,7 @@
     },
     {
       "id": "45",
-      "rank": 45,
+      "rank": 47,
       "name": "Sonic Wave",
       "creator": "Cyclic",
       "verifier": "Unknown",
@@ -587,7 +625,7 @@
     },
     {
       "id": "46",
-      "rank": 46,
+      "rank": 48,
       "name": "LUMINA",
       "creator": "hechie and more",
       "verifier": "Unknown",
@@ -600,7 +638,7 @@
     },
     {
       "id": "47",
-      "rank": 47,
+      "rank": 49,
       "name": "Yatagarasu",
       "creator": "ViPriN and more",
       "verifier": "Unknown",
@@ -613,7 +651,7 @@
     },
     {
       "id": "48",
-      "rank": 48,
+      "rank": 50,
       "name": "Kuzureta",
       "creator": "Teno and more",
       "verifier": "Unknown",
@@ -626,7 +664,7 @@
     },
     {
       "id": "49",
-      "rank": 49,
+      "rank": 51,
       "name": "Shmarley Ville",
       "creator": "Renn241",
       "verifier": "Unknown",
@@ -639,7 +677,7 @@
     },
     {
       "id": "50",
-      "rank": 50,
+      "rank": 52,
       "name": "xo",
       "creator": "KrmaL",
       "verifier": "Unknown",
@@ -652,7 +690,7 @@
     },
     {
       "id": "51",
-      "rank": 51,
+      "rank": 53,
       "name": "super probably level",
       "creator": "alkali",
       "verifier": "Unknown",
@@ -665,7 +703,7 @@
     },
     {
       "id": "52",
-      "rank": 52,
+      "rank": 54,
       "name": "Molten Core",
       "creator": "Janucha",
       "verifier": "Unknown",
@@ -678,7 +716,7 @@
     },
     {
       "id": "53",
-      "rank": 53,
+      "rank": 55,
       "name": "Friday Vortex",
       "creator": "Cersia and more",
       "verifier": "Unknown",
@@ -691,7 +729,7 @@
     },
     {
       "id": "54",
-      "rank": 54,
+      "rank": 56,
       "name": "Generic Wave",
       "creator": "Pennutoh and more",
       "verifier": "Unknown",
@@ -704,7 +742,7 @@
     },
     {
       "id": "55",
-      "rank": 55,
+      "rank": 57,
       "name": "Quantum Theory",
       "creator": "herozombie80",
       "verifier": "Unknown",
@@ -717,7 +755,7 @@
     },
     {
       "id": "56",
-      "rank": 56,
+      "rank": 58,
       "name": "Freedom08",
       "creator": "Pennutoh and more",
       "verifier": "Unknown",
@@ -730,7 +768,7 @@
     },
     {
       "id": "57",
-      "rank": 57,
+      "rank": 59,
       "name": "Erebus",
       "creator": "Ilrell and Rustam",
       "verifier": "Unknown",
@@ -743,7 +781,7 @@
     },
     {
       "id": "58",
-      "rank": 58,
+      "rank": 60,
       "name": "The Reaper",
       "creator": "Kyhros and more",
       "verifier": "Unknown",
@@ -757,7 +795,7 @@
     {
       "id": "the_mainframe",
       "name": "The Mainframe",
-      "rank": 59,
+      "rank": 61,
       "creator": "notlsa",
       "verifier": "notlsa",
       "publisher": "notlsa",
@@ -775,7 +813,7 @@
     },
     {
       "id": "59",
-      "rank": 60,
+      "rank": 62,
       "name": "Celestial Force",
       "creator": "MindCap and more",
       "verifier": "Unknown",
@@ -789,7 +827,7 @@
     {
       "id": "catalyze",
       "name": "Catalyze",
-      "rank": 61,
+      "rank": 63,
       "creator": "Zephirox",
       "verifier": "MrSpaghetti",
       "publisher": "Zephirox",
@@ -807,7 +845,7 @@
     },
     {
       "id": "60",
-      "rank": 62,
+      "rank": 64,
       "name": "Framework",
       "creator": "Agat3",
       "verifier": "Unknown",
@@ -820,7 +858,7 @@
     },
     {
       "id": "61",
-      "rank": 63,
+      "rank": 65,
       "name": "Devil Vortex",
       "creator": "Rustam",
       "verifier": "Unknown",
@@ -833,7 +871,7 @@
     },
     {
       "id": "62",
-      "rank": 64,
+      "rank": 66,
       "name": "Retention Rush",
       "creator": "TheBlackHell",
       "verifier": "Unknown",
@@ -846,7 +884,7 @@
     },
     {
       "id": "63",
-      "rank": 65,
+      "rank": 67,
       "name": "Digital Descent",
       "creator": "ViPriN and more",
       "verifier": "Unknown",
@@ -859,7 +897,7 @@
     },
     {
       "id": "64",
-      "rank": 66,
+      "rank": 68,
       "name": "TheCinnyBun",
       "creator": "Renn241",
       "verifier": "Unknown",
@@ -872,7 +910,7 @@
     },
     {
       "id": "65",
-      "rank": 67,
+      "rank": 69,
       "name": "Cadrega City",
       "creator": "Pennutoh and Berke423",
       "verifier": "Unknown",
@@ -885,7 +923,7 @@
     },
     {
       "id": "66",
-      "rank": 68,
+      "rank": 70,
       "name": "Stalemate Redux",
       "creator": "TehTactiq and TheFrozenTide",
       "verifier": "Unknown",
@@ -898,7 +936,7 @@
     },
     {
       "id": "67",
-      "rank": 69,
+      "rank": 71,
       "name": "ZAPHKIEL",
       "creator": "Noctafly and Darwin",
       "verifier": "Unknown",
@@ -911,7 +949,7 @@
     },
     {
       "id": "68",
-      "rank": 70,
+      "rank": 72,
       "name": "lovel",
       "creator": "WireMuncher",
       "verifier": "Unknown",
@@ -924,7 +962,7 @@
     },
     {
       "id": "69",
-      "rank": 71,
+      "rank": 73,
       "name": "Killbot",
       "creator": "Lithifusion",
       "verifier": "Unknown",
@@ -937,7 +975,7 @@
     },
     {
       "id": "70",
-      "rank": 72,
+      "rank": 74,
       "name": "Artificial Ascent",
       "creator": "ViPriN and more",
       "verifier": "Unknown",
@@ -950,7 +988,7 @@
     },
     {
       "id": "71",
-      "rank": 73,
+      "rank": 75,
       "name": "Edelweiss",
       "creator": "Hexitine",
       "verifier": "Unknown",
@@ -962,8 +1000,27 @@
       "legacy": false
     },
     {
+      "id": "yuh",
+      "name": "Yuh",
+      "rank": 76,
+      "creator": "Lfritz",
+      "verifier": "Moosh",
+      "publisher": "Lfritz",
+      "points": 34.2,
+      "video": "qTv6pOXWsJw",
+      "minPercent": 100,
+      "history": [
+        {
+          "date": "2026-06-06",
+          "rank": 76,
+          "action": "placed"
+        }
+      ],
+      "legacy": false
+    },
+    {
       "id": "72",
-      "rank": 74,
+      "rank": 77,
       "name": "Belloq",
       "creator": "Sminx and more",
       "verifier": "Unknown",
@@ -976,7 +1033,7 @@
     },
     {
       "id": "73",
-      "rank": 75,
+      "rank": 78,
       "name": "Crystal",
       "creator": "Zeronium",
       "verifier": "Unknown",
@@ -989,7 +1046,7 @@
     },
     {
       "id": "74",
-      "rank": 76,
+      "rank": 79,
       "name": "Diamond Disco",
       "creator": "Zeronium",
       "verifier": "Unknown",
@@ -1002,7 +1059,7 @@
     },
     {
       "id": "75",
-      "rank": 77,
+      "rank": 80,
       "name": "Night Rider",
       "creator": "LmAnubis and more",
       "verifier": "Unknown",
@@ -1015,7 +1072,7 @@
     },
     {
       "id": "76",
-      "rank": 78,
+      "rank": 81,
       "name": "Black Flag",
       "creator": "NEKONGAMES",
       "verifier": "Unknown",
@@ -1028,7 +1085,7 @@
     },
     {
       "id": "77",
-      "rank": 79,
+      "rank": 82,
       "name": "Quantum Processing",
       "creator": "Riot and more",
       "verifier": "Unknown",
@@ -1041,7 +1098,7 @@
     },
     {
       "id": "78",
-      "rank": 80,
+      "rank": 83,
       "name": "Black Blizzard",
       "creator": "KrmaL",
       "verifier": "Unknown",
@@ -1054,7 +1111,7 @@
     },
     {
       "id": "79",
-      "rank": 81,
+      "rank": 84,
       "name": "distraught",
       "creator": "alkali and more",
       "verifier": "Unknown",
@@ -1067,7 +1124,7 @@
     },
     {
       "id": "80",
-      "rank": 82,
+      "rank": 85,
       "name": "Neurostasis",
       "creator": "KiwiPenguin",
       "verifier": "Unknown",
@@ -1080,7 +1137,7 @@
     },
     {
       "id": "81",
-      "rank": 83,
+      "rank": 86,
       "name": "Ethereal Artifice",
       "creator": "Zeroya",
       "verifier": "Unknown",
@@ -1093,7 +1150,7 @@
     },
     {
       "id": "82",
-      "rank": 84,
+      "rank": 87,
       "name": "Glowy",
       "creator": "Rob Buck",
       "verifier": "Unknown",
@@ -1106,7 +1163,7 @@
     },
     {
       "id": "83",
-      "rank": 85,
+      "rank": 88,
       "name": "Astral Divinity",
       "creator": "knobbelboy",
       "verifier": "Unknown",
@@ -1119,7 +1176,7 @@
     },
     {
       "id": "84",
-      "rank": 86,
+      "rank": 89,
       "name": "MISFIRE",
       "creator": "Galaxxyss",
       "verifier": "Unknown",
@@ -1132,7 +1189,7 @@
     },
     {
       "id": "85",
-      "rank": 87,
+      "rank": 90,
       "name": "rosedynamix",
       "creator": "Renn241 and Rwse",
       "verifier": "Unknown",
@@ -1145,7 +1202,7 @@
     },
     {
       "id": "86",
-      "rank": 88,
+      "rank": 91,
       "name": "Rate Demon",
       "creator": "MikeWheelerFan",
       "verifier": "Unknown",
@@ -1158,7 +1215,7 @@
     },
     {
       "id": "87",
-      "rank": 89,
+      "rank": 92,
       "name": "Void Wave",
       "creator": "cherryteam",
       "verifier": "Unknown",
@@ -1171,7 +1228,7 @@
     },
     {
       "id": "88",
-      "rank": 90,
+      "rank": 93,
       "name": "Faded Dream",
       "creator": "DreamTide",
       "verifier": "Unknown",
@@ -1184,7 +1241,7 @@
     },
     {
       "id": "89",
-      "rank": 91,
+      "rank": 94,
       "name": "Bausha Vortex",
       "creator": "Pennutoh",
       "verifier": "Unknown",
@@ -1197,7 +1254,7 @@
     },
     {
       "id": "90",
-      "rank": 92,
+      "rank": 95,
       "name": "Balengu Vortex",
       "creator": "Temp and more",
       "verifier": "Unknown",
@@ -1210,7 +1267,7 @@
     },
     {
       "id": "91",
-      "rank": 93,
+      "rank": 96,
       "name": "Sinister Incision",
       "creator": "ItsHybrid and more",
       "verifier": "Unknown",
@@ -1223,7 +1280,7 @@
     },
     {
       "id": "92",
-      "rank": 94,
+      "rank": 97,
       "name": "The Hell Zone",
       "creator": "Cyclic and more",
       "verifier": "Unknown",
@@ -1236,7 +1293,7 @@
     },
     {
       "id": "93",
-      "rank": 95,
+      "rank": 98,
       "name": "The Hell Field",
       "creator": "Stormfly and more",
       "verifier": "Unknown",
@@ -1249,7 +1306,7 @@
     },
     {
       "id": "94",
-      "rank": 96,
+      "rank": 99,
       "name": "Ziroikabi",
       "creator": "MikeWheelerFan",
       "verifier": "Unknown",
@@ -1262,7 +1319,7 @@
     },
     {
       "id": "95",
-      "rank": 97,
+      "rank": 100,
       "name": "Furious Flames",
       "creator": "Eggnog and more",
       "verifier": "Unknown",
@@ -1275,7 +1332,7 @@
     },
     {
       "id": "96",
-      "rank": 98,
+      "rank": 101,
       "name": "Fractured Dreams",
       "creator": "nhay",
       "verifier": "Unknown",
@@ -1288,7 +1345,7 @@
     },
     {
       "id": "97",
-      "rank": 99,
+      "rank": 102,
       "name": "Voltage",
       "creator": "Hypno and more",
       "verifier": "Unknown",
@@ -1301,7 +1358,7 @@
     },
     {
       "id": "98",
-      "rank": 100,
+      "rank": 103,
       "name": "Auditory Breaker",
       "creator": "LazerBlitz and more",
       "verifier": "Unknown",
@@ -1314,7 +1371,7 @@
     },
     {
       "id": "99",
-      "rank": 101,
+      "rank": 104,
       "name": "Worse Trip",
       "creator": "Loltad",
       "verifier": "Unknown",
@@ -1327,7 +1384,7 @@
     },
     {
       "id": "100",
-      "rank": 102,
+      "rank": 105,
       "name": "milo",
       "creator": "xSlendy",
       "verifier": "Unknown",
@@ -1340,7 +1397,7 @@
     },
     {
       "id": "101",
-      "rank": 103,
+      "rank": 106,
       "name": "SubSonic",
       "creator": "ViPriN and more",
       "verifier": "Unknown",
@@ -1353,7 +1410,7 @@
     },
     {
       "id": "102",
-      "rank": 104,
+      "rank": 107,
       "name": "Audio Expulsion",
       "creator": "GoodSmile and more",
       "verifier": "Unknown",
@@ -1366,7 +1423,7 @@
     },
     {
       "id": "103",
-      "rank": 105,
+      "rank": 108,
       "name": "Dolos",
       "creator": "Enezux and more",
       "verifier": "Unknown",
@@ -1380,7 +1437,7 @@
     {
       "id": "lovestruck",
       "name": "Lovestruck",
-      "rank": 106,
+      "rank": 109,
       "creator": "Eveteer, Hypno,  Raivolt,  Cynir,  Havok,  pocke,  Loltad,  Koopazu,  StarkytheSalad,  shmigels,  Tuna310",
       "verifier": "Blitzer",
       "publisher": "Tuna310",
@@ -1398,7 +1455,7 @@
     },
     {
       "id": "104",
-      "rank": 107,
+      "rank": 110,
       "name": "Anoxysm",
       "creator": "Lemons",
       "verifier": "Unknown",
@@ -1411,7 +1468,7 @@
     },
     {
       "id": "105",
-      "rank": 108,
+      "rank": 111,
       "name": "The Cellar Path",
       "creator": "JamAttack",
       "verifier": "Unknown",
@@ -1424,7 +1481,7 @@
     },
     {
       "id": "106",
-      "rank": 109,
+      "rank": 112,
       "name": "The Hell Inferno",
       "creator": "Stormfly and more",
       "verifier": "Unknown",
@@ -1437,7 +1494,7 @@
     },
     {
       "id": "107",
-      "rank": 110,
+      "rank": 113,
       "name": "Endless Dream",
       "creator": "DreamTide",
       "verifier": "Unknown",
@@ -1450,7 +1507,7 @@
     },
     {
       "id": "108",
-      "rank": 111,
+      "rank": 114,
       "name": "The Hell World",
       "creator": "Stormfly and more",
       "verifier": "Unknown",
@@ -1463,7 +1520,7 @@
     },
     {
       "id": "109",
-      "rank": 112,
+      "rank": 115,
       "name": "Athanatos",
       "creator": "Exenity and more",
       "verifier": "Unknown",
@@ -1476,7 +1533,7 @@
     },
     {
       "id": "110",
-      "rank": 113,
+      "rank": 116,
       "name": "Loose Screws",
       "creator": "Aeyooo",
       "verifier": "Unknown",
@@ -1489,7 +1546,7 @@
     },
     {
       "id": "111",
-      "rank": 114,
+      "rank": 117,
       "name": "New Record",
       "creator": "Temp and more",
       "verifier": "Unknown",
@@ -1502,7 +1559,7 @@
     },
     {
       "id": "112",
-      "rank": 115,
+      "rank": 118,
       "name": "Wild Rose",
       "creator": "Galaxxyss",
       "verifier": "Unknown",
@@ -1515,7 +1572,7 @@
     },
     {
       "id": "113",
-      "rank": 116,
+      "rank": 119,
       "name": "project girlboss",
       "creator": "koko43",
       "verifier": "Unknown",
@@ -1528,7 +1585,7 @@
     },
     {
       "id": "114",
-      "rank": 117,
+      "rank": 120,
       "name": "RASH",
       "creator": "Loltad",
       "verifier": "Unknown",
@@ -1541,7 +1598,7 @@
     },
     {
       "id": "115",
-      "rank": 118,
+      "rank": 121,
       "name": "Removed Submission",
       "creator": "WHErwin",
       "verifier": "Unknown",
@@ -1554,7 +1611,7 @@
     },
     {
       "id": "116",
-      "rank": 119,
+      "rank": 122,
       "name": "Mystic",
       "creator": "Endlevel and more",
       "verifier": "Unknown",
@@ -1567,7 +1624,7 @@
     },
     {
       "id": "117",
-      "rank": 120,
+      "rank": 123,
       "name": "hot rod",
       "creator": "stcubing",
       "verifier": "Unknown",
@@ -1580,7 +1637,7 @@
     },
     {
       "id": "118",
-      "rank": 121,
+      "rank": 124,
       "name": "WcropoliX",
       "creator": "BlassCFB",
       "verifier": "Unknown",
@@ -1593,7 +1650,7 @@
     },
     {
       "id": "119",
-      "rank": 122,
+      "rank": 125,
       "name": "Turbulent Valley",
       "creator": "TwisterDude161 and more",
       "verifier": "Unknown",
@@ -1606,7 +1663,7 @@
     },
     {
       "id": "120",
-      "rank": 123,
+      "rank": 126,
       "name": "The Hell Origin",
       "creator": "Sohn0924 and more",
       "verifier": "Unknown",
@@ -1619,7 +1676,7 @@
     },
     {
       "id": "121",
-      "rank": 124,
+      "rank": 127,
       "name": "OneAttempt",
       "creator": "TheRealXFuture",
       "verifier": "Unknown",
@@ -1632,7 +1689,7 @@
     },
     {
       "id": "122",
-      "rank": 125,
+      "rank": 128,
       "name": "DARKENED",
       "creator": "BIANOX and more",
       "verifier": "Unknown",
@@ -1645,7 +1702,7 @@
     },
     {
       "id": "123",
-      "rank": 126,
+      "rank": 129,
       "name": "Coolie Mazie Paloozi",
       "creator": "akunakunn",
       "verifier": "Unknown",
@@ -1658,7 +1715,7 @@
     },
     {
       "id": "124",
-      "rank": 127,
+      "rank": 130,
       "name": "Carnage Mode",
       "creator": "Findexi and more",
       "verifier": "Unknown",
@@ -1671,7 +1728,7 @@
     },
     {
       "id": "125",
-      "rank": 128,
+      "rank": 131,
       "name": "Poltergeist Reborn",
       "creator": "ThePrimeEvil",
       "verifier": "Unknown",
@@ -1684,7 +1741,7 @@
     },
     {
       "id": "126",
-      "rank": 129,
+      "rank": 132,
       "name": "Falcon16",
       "creator": "LIEB and more",
       "verifier": "Unknown",
@@ -1697,7 +1754,7 @@
     },
     {
       "id": "127",
-      "rank": 130,
+      "rank": 133,
       "name": "Blade of Justice",
       "creator": "Manix648 and more",
       "verifier": "Unknown",
@@ -1710,7 +1767,7 @@
     },
     {
       "id": "128",
-      "rank": 131,
+      "rank": 134,
       "name": "Nautilus",
       "creator": "Tabgnid",
       "verifier": "Unknown",
@@ -1723,7 +1780,7 @@
     },
     {
       "id": "129",
-      "rank": 132,
+      "rank": 135,
       "name": "Phobos",
       "creator": "gmdsean and more",
       "verifier": "Unknown",
@@ -1736,7 +1793,7 @@
     },
     {
       "id": "130",
-      "rank": 133,
+      "rank": 136,
       "name": "Silentium Gradas",
       "creator": "Metalface221 and more",
       "verifier": "Unknown",
@@ -1749,7 +1806,7 @@
     },
     {
       "id": "131",
-      "rank": 134,
+      "rank": 137,
       "name": "Intrusive ID",
       "creator": "Pasiblitz",
       "verifier": "Unknown",
@@ -1762,7 +1819,7 @@
     },
     {
       "id": "132",
-      "rank": 135,
+      "rank": 138,
       "name": "EXPLICIT",
       "creator": "Renn241",
       "verifier": "Unknown",
@@ -1775,7 +1832,7 @@
     },
     {
       "id": "133",
-      "rank": 136,
+      "rank": 139,
       "name": "Infinite Inversion",
       "creator": "Filqh",
       "verifier": "Unknown",
@@ -1788,7 +1845,7 @@
     },
     {
       "id": "134",
-      "rank": 137,
+      "rank": 140,
       "name": "Sakupen Hell",
       "creator": "Noobas",
       "verifier": "Unknown",
@@ -1801,7 +1858,7 @@
     },
     {
       "id": "135",
-      "rank": 138,
+      "rank": 141,
       "name": "Artifice",
       "creator": "f3lixsram and more",
       "verifier": "Unknown",
@@ -1814,7 +1871,7 @@
     },
     {
       "id": "136",
-      "rank": 139,
+      "rank": 142,
       "name": "Tenth Circle",
       "creator": "DeniPol and NormDanchik",
       "verifier": "Unknown",
@@ -1827,7 +1884,7 @@
     },
     {
       "id": "137",
-      "rank": 140,
+      "rank": 143,
       "name": "SANTA FE",
       "creator": "JoacoPe",
       "verifier": "Unknown",
@@ -1840,7 +1897,7 @@
     },
     {
       "id": "138",
-      "rank": 141,
+      "rank": 144,
       "name": "Fusion Z",
       "creator": "Manix648 and more",
       "verifier": "Unknown",
@@ -1853,7 +1910,7 @@
     },
     {
       "id": "139",
-      "rank": 142,
+      "rank": 145,
       "name": "Carcano",
       "creator": "Asuith and TomsoN",
       "verifier": "Unknown",
@@ -1866,7 +1923,7 @@
     },
     {
       "id": "140",
-      "rank": 143,
+      "rank": 146,
       "name": "Untitled",
       "creator": "iiLuna and more",
       "verifier": "Unknown",
@@ -1879,7 +1936,7 @@
     },
     {
       "id": "141",
-      "rank": 144,
+      "rank": 147,
       "name": "The Hell Bird",
       "creator": "Havok and more",
       "verifier": "Unknown",
@@ -1892,7 +1949,7 @@
     },
     {
       "id": "142",
-      "rank": 145,
+      "rank": 148,
       "name": "Atmosphere",
       "creator": "VoidSquad",
       "verifier": "Unknown",
@@ -1905,7 +1962,7 @@
     },
     {
       "id": "143",
-      "rank": 146,
+      "rank": 149,
       "name": "OPSM1",
       "creator": "Varse",
       "verifier": "Unknown",
@@ -1918,7 +1975,7 @@
     },
     {
       "id": "144",
-      "rank": 147,
+      "rank": 150,
       "name": "Molten Mercury",
       "creator": "ItsHybrid and more",
       "verifier": "Unknown",
@@ -1931,7 +1988,7 @@
     },
     {
       "id": "145",
-      "rank": 148,
+      "rank": 151,
       "name": "Biohazard",
       "creator": "ARtu and more",
       "verifier": "Unknown",
@@ -1944,7 +2001,7 @@
     },
     {
       "id": "146",
-      "rank": 149,
+      "rank": 152,
       "name": "Astrophobia",
       "creator": "Jakalope and more",
       "verifier": "Unknown",
@@ -1957,7 +2014,7 @@
     },
     {
       "id": "147",
-      "rank": 150,
+      "rank": 153,
       "name": "Omorfia",
       "creator": "HHyper",
       "verifier": "Unknown",
@@ -1970,7 +2027,7 @@
     },
     {
       "id": "148",
-      "rank": 151,
+      "rank": 154,
       "name": "Sysmique Locked",
       "creator": "jakerz95",
       "verifier": "Unknown",
@@ -1983,7 +2040,7 @@
     },
     {
       "id": "149",
-      "rank": 152,
+      "rank": 155,
       "name": "gravity",
       "creator": "Kaza and slayerkirb",
       "verifier": "Unknown",
@@ -1996,7 +2053,7 @@
     },
     {
       "id": "150",
-      "rank": 153,
+      "rank": 156,
       "name": "MOTOR MOGOK",
       "creator": "akunakunn",
       "verifier": "Unknown",
@@ -4179,6 +4236,51 @@
       "date": "2026-06-02",
       "notes": "",
       "timestamp": 1780390672780
+    },
+    {
+      "demonId": "45",
+      "player": "wDyspraxia",
+      "progress": 74,
+      "video": "https://youtu.be/fWtaz9XNaUY?si=l88sXcWU0QbCdoIY",
+      "date": "2026-06-06",
+      "notes": "the thumbnail says 72 which is gae",
+      "timestamp": 1780756866386
+    },
+    {
+      "demonId": "51",
+      "player": "bbboat",
+      "progress": 100,
+      "video": "https://www.youtube.com/watch?v=m6jrjKrojws",
+      "date": "2026-06-06",
+      "notes": "",
+      "timestamp": 1780756956783
+    },
+    {
+      "demonId": "goober_rage_stage",
+      "player": "The5Sharks",
+      "progress": 100,
+      "video": "cLFs5sXizQfGvY4e",
+      "date": "2026-06-06",
+      "notes": "First Victor / Record Holder",
+      "timestamp": 1780757302685
+    },
+    {
+      "demonId": "sonic_wave_infinity",
+      "player": "Gabozo",
+      "progress": 100,
+      "video": "V98pIzzGCHk",
+      "date": "2026-06-06",
+      "notes": "First Victor / Record Holder",
+      "timestamp": 1780757425271
+    },
+    {
+      "demonId": "yuh",
+      "player": "Tigrshrk",
+      "progress": 100,
+      "video": "qTv6pOXWsJw",
+      "date": "2026-06-06",
+      "notes": "First Victor / Record Holder",
+      "timestamp": 1780757736438
     }
   ],
   "players": [
@@ -4189,9 +4291,25 @@
     "Raptorking1000",
     "vender",
     "chikin",
-    "ketchupWTGMD"
+    "ketchupWTGMD",
+    "wDyspraxia",
+    "bbboat",
+    "The5Sharks",
+    "Gabozo"
   ],
   "changelog": [
+    {
+      "date": "2026-06-06",
+      "text": "Yuh added at #76"
+    },
+    {
+      "date": "2026-06-06",
+      "text": "Sonic Wave Infinity added at #2"
+    },
+    {
+      "date": "2026-06-06",
+      "text": "Goober Rage Stage added at #6"
+    },
     {
       "date": "2026-06-02",
       "text": "Lovestruck added at #106"
