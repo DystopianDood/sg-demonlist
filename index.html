@@ -379,7 +379,6 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
 
     // Notice == instead of === to handle String vs Int JSON disparity
     const recs = data.records.filter(r => r.demonId == demon.id).sort((a, b) => b.progress - a.progress || new Date(a.date) - new Date(b.date));
-    const chartId = containerId + '-chart';
 
     el.innerHTML = `
       <h1 class="demon-title mono">#${demon.rank} - ${demon.name}</h1>
@@ -395,16 +394,10 @@ footer{margin-top:40px;padding:20px;border-top:1px solid var(--border);color:var
         </div>
         <div class="card video"><iframe src="https://www.youtube-nocookie.com/embed/${demon.video}" allowfullscreen title="${demon.name}"></iframe></div>
       </div>
-      ${demon.history && demon.history.length > 0 ? `<div class="card chart-card" style="margin-bottom:16px"><h3>Position History</h3><div style="height:180px"><canvas id="${chartId}"></canvas></div></div>` : ''}
       <div class="card records-card"><h3>Singapore Records</h3>
         <table class="records-table"><thead><tr><th>#</th><th>Player</th><th>Progress</th><th>Date</th><th>Proof</th></tr></thead>
         <tbody>${recs.length ? recs.map((r, i) => `<tr><td class="mono">${i + 1}</td><td><span class="badge">🇸🇬 ${r.player}</span></td><td class="mono">${r.progress}%</td><td>${r.date}</td><td><a class="video-link" href="${r.videoUrl || r.video}" target="_blank">watch</a></td></tr>`).join('') : `<tr><td colspan="5" style="text-align:center;padding:24px;color:var(--text-dim)">No Singapore records yet — be the first!</td></tr>`}</tbody></table>
       </div>`;
-
-    const canvas = document.getElementById(chartId);
-    if (canvas && demon.history?.length) {
-      requestAnimationFrame(() => drawHistoryChart(canvas, demon.history));
-    }
   }
 
   function getPlayerStats() {
