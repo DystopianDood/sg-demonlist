@@ -9,7 +9,7 @@
       "publisher": "icedcave",
       "points": 350,
       "video": "7YJyEWsTuuw",
-      "minPercent": 100,
+      "minPercent": 75,
       "history": [
         {
           "date": "2026-08-06",
@@ -28,7 +28,7 @@
       "publisher": "Unknown",
       "points": 344.8,
       "video": "9CpxJuCJyQs",
-      "minPercent": 100,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -41,7 +41,7 @@
       "publisher": "⁨APTeamOfficial",
       "points": 339.7,
       "video": "V98pIzzGCHk",
-      "minPercent": 100,
+      "minPercent": 75,
       "history": [
         {
           "date": "2026-06-06",
@@ -60,7 +60,7 @@
       "publisher": "Unknown",
       "points": 334.6,
       "video": "8e8bDgatzxY",
-      "minPercent": 100,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -73,7 +73,7 @@
       "publisher": "Unknown",
       "points": 329.6,
       "video": "0PCxncwDLxo",
-      "minPercent": 100,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -86,7 +86,7 @@
       "publisher": "Unknown",
       "points": 324.7,
       "video": "pJKBwIowUvs",
-      "minPercent": 100,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -99,7 +99,7 @@
       "publisher": "dice88",
       "points": 319.9,
       "video": "N8p-Kk9sfu0&t=184s",
-      "minPercent": 100,
+      "minPercent": 75,
       "history": [
         {
           "date": "2026-08-06",
@@ -118,7 +118,7 @@
       "publisher": "Unknown",
       "points": 315.1,
       "video": "f-JxSTM-wZQ",
-      "minPercent": 100,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -131,7 +131,7 @@
       "publisher": "⁨bonscarrot",
       "points": 310.4,
       "video": "cLFs5sXizQfGvY4e",
-      "minPercent": 100,
+      "minPercent": 75,
       "history": [
         {
           "date": "2026-06-06",
@@ -345,7 +345,7 @@
       "publisher": "Unknown",
       "points": 244.2,
       "video": "54fUDNUUQBY",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -358,7 +358,7 @@
       "publisher": "Unknown",
       "points": 240.6,
       "video": "WFH78q50g3I&t=256s",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -371,7 +371,7 @@
       "publisher": "Unknown",
       "points": 237,
       "video": "rHjLwuW8CeU",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -384,7 +384,7 @@
       "publisher": "Unknown",
       "points": 233.4,
       "video": "ZB7keUOHa9Q",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -397,7 +397,7 @@
       "publisher": "Unknown",
       "points": 230,
       "video": "SwnFCVM0Gjc",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -410,7 +410,7 @@
       "publisher": "Unknown",
       "points": 226.5,
       "video": "IqRiqxyiOsM",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -423,7 +423,7 @@
       "publisher": "Unknown",
       "points": 223.2,
       "video": "b4cKByVF38w",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -436,7 +436,7 @@
       "publisher": "Unknown",
       "points": 219.8,
       "video": "2DdB5XUVMMY",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -449,7 +449,7 @@
       "publisher": "Unknown",
       "points": 216.6,
       "video": "GIebv6qf2I0",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -462,7 +462,7 @@
       "publisher": "Unknown",
       "points": 213.3,
       "video": "e6KHSb8NR0s",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -475,7 +475,7 @@
       "publisher": "Unknown",
       "points": 210.2,
       "video": "kR1CIf0VEvk",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -488,7 +488,7 @@
       "publisher": "Unknown",
       "points": 207,
       "video": "x6ISYH6xtLk",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -501,7 +501,7 @@
       "publisher": "Unknown",
       "points": 204,
       "video": "8srRQxXyMaM",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -514,7 +514,7 @@
       "publisher": "Unknown",
       "points": 200.9,
       "video": "fMjgGvjgTds",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -527,7 +527,7 @@
       "publisher": "Unknown",
       "points": 197.9,
       "video": "GuAcCqiqSSc",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -540,7 +540,7 @@
       "publisher": "Unknown",
       "points": 195,
       "video": "xh8anYvQMFI",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -553,7 +553,7 @@
       "publisher": "Unknown",
       "points": 192.1,
       "video": "NKxOIXH7iVo",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -566,7 +566,7 @@
       "publisher": "Unknown",
       "points": 189.2,
       "video": "rjVHXNpNgCg",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -579,7 +579,7 @@
       "publisher": "Unknown",
       "points": 186.4,
       "video": "md9Lf5NnIZw",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -592,7 +592,7 @@
       "publisher": "Unknown",
       "points": 183.6,
       "video": "QuDYIZkLWG8",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -605,7 +605,7 @@
       "publisher": "Unknown",
       "points": 180.9,
       "video": "IoEV58gQb1E",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -618,7 +618,7 @@
       "publisher": "Unknown",
       "points": 178.2,
       "video": "_WJlVJbL2nQ",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -631,7 +631,7 @@
       "publisher": "Unknown",
       "points": 175.6,
       "video": "jj9zJbkh29M",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -644,7 +644,7 @@
       "publisher": "Unknown",
       "points": 172.9,
       "video": "okjG-2tGgDo",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -657,7 +657,7 @@
       "publisher": "Unknown",
       "points": 170.4,
       "video": "w0h3uQpjJh8",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -670,7 +670,7 @@
       "publisher": "Unknown",
       "points": 167.8,
       "video": "SZ84wGID1z4",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -683,7 +683,7 @@
       "publisher": "Unknown",
       "points": 165.3,
       "video": "IUOWQU-JzHg",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -696,7 +696,7 @@
       "publisher": "Unknown",
       "points": 162.9,
       "video": "VnZ1E6zEjig",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -709,7 +709,7 @@
       "publisher": "Unknown",
       "points": 160.4,
       "video": "yLqiUn4bpj4",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -722,7 +722,7 @@
       "publisher": "Unknown",
       "points": 158.1,
       "video": "j4ZGpqwmwNQ",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -735,7 +735,7 @@
       "publisher": "Unknown",
       "points": 155.7,
       "video": "yHiyOp6espY",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -748,7 +748,7 @@
       "publisher": "Unknown",
       "points": 153.4,
       "video": "xmG-zn1vO8g",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -761,7 +761,7 @@
       "publisher": "Unknown",
       "points": 151.1,
       "video": "_87ZYScgTSI",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -774,7 +774,7 @@
       "publisher": "Unknown",
       "points": 148.8,
       "video": "-_8HBm0gOT4",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -787,7 +787,7 @@
       "publisher": "Unknown",
       "points": 146.6,
       "video": "58KfT5KshSQ",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -800,7 +800,7 @@
       "publisher": "Unknown",
       "points": 144.4,
       "video": "5-hLJuza6to",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -813,7 +813,7 @@
       "publisher": "Unknown",
       "points": 142.3,
       "video": "NUpGFHz8lx8",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -826,7 +826,7 @@
       "publisher": "Unknown",
       "points": 140.2,
       "video": "70MPLWdOcT8",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -839,7 +839,7 @@
       "publisher": "notlsa",
       "points": 138.1,
       "video": "-w67uGf3KnU&t=99s",
-      "minPercent": 100,
+      "minPercent": 75,
       "history": [
         {
           "date": "2026-06-02",
@@ -858,7 +858,7 @@
       "publisher": "Unknown",
       "points": 136,
       "video": "700nI7121cA",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -871,7 +871,7 @@
       "publisher": "Zephirox",
       "points": 134,
       "video": "2suhJ0Lv7Ms&t=4s",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [
         {
           "date": "2026-06-01",
@@ -890,7 +890,7 @@
       "publisher": "Unknown",
       "points": 132,
       "video": "NNsYxJtB1VU",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -903,7 +903,7 @@
       "publisher": "Unknown",
       "points": 130.1,
       "video": "P4RB6PDhpnI",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -916,7 +916,7 @@
       "publisher": "Unknown",
       "points": 128.1,
       "video": "EdFcQ38y_Dg",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -929,7 +929,7 @@
       "publisher": "Unknown",
       "points": 126.2,
       "video": "9yZflxNrUTU",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -942,7 +942,7 @@
       "publisher": "Unknown",
       "points": 124.3,
       "video": "kstWxrS7cdc",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -955,7 +955,7 @@
       "publisher": "Unknown",
       "points": 122.5,
       "video": "Ygs7Yelf-LY",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -968,7 +968,7 @@
       "publisher": "Unknown",
       "points": 120.7,
       "video": "6-LsdVfL7ZA",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -981,7 +981,7 @@
       "publisher": "Unknown",
       "points": 118.9,
       "video": "R5_KJo4Rjvw",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -994,7 +994,7 @@
       "publisher": "Unknown",
       "points": 117.1,
       "video": "mYcS-pu5KyA",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -1007,7 +1007,7 @@
       "publisher": "Unknown",
       "points": 115.3,
       "video": "ZxUB-5MvLCo",
-      "minPercent": 70,
+      "minPercent": 75,
       "history": [],
       "legacy": false
     },
@@ -1020,7 +1020,7 @@
       "publisher": "Unknown",
       "points": 113.6,
       "video": "5I4lET40_7U",
-      "minPercent": 70,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1033,7 +1033,7 @@
       "publisher": "Unknown",
       "points": 111.9,
       "video": "eWmEkYr4DqE&t=26s",
-      "minPercent": 70,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1065,7 +1065,7 @@
       "publisher": "Unknown",
       "points": 108.6,
       "video": "CVC_LgMy8do",
-      "minPercent": 70,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1078,7 +1078,7 @@
       "publisher": "Unknown",
       "points": 107,
       "video": "Yn-zAJA-fyY",
-      "minPercent": 70,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1091,7 +1091,7 @@
       "publisher": "Unknown",
       "points": 105.4,
       "video": "Shd4LsH8m7I",
-      "minPercent": 70,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1104,7 +1104,7 @@
       "publisher": "Unknown",
       "points": 103.8,
       "video": "SZecDqt2fww",
-      "minPercent": 70,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1117,7 +1117,7 @@
       "publisher": "Unknown",
       "points": 102.3,
       "video": "LIzdQ8_ouWw",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1130,7 +1130,7 @@
       "publisher": "Unknown",
       "points": 100.8,
       "video": "FJCrkJLh9q8",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1143,7 +1143,7 @@
       "publisher": "Unknown",
       "points": 99.3,
       "video": "4kX8Sgn8U9I",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1156,7 +1156,7 @@
       "publisher": "Unknown",
       "points": 97.8,
       "video": "ehc5ckcurGc",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1169,7 +1169,7 @@
       "publisher": "Unknown",
       "points": 96.3,
       "video": "0BX-Nrd3duY",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1182,7 +1182,7 @@
       "publisher": "Unknown",
       "points": 94.9,
       "video": "42lFGG0FUTE",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1195,7 +1195,7 @@
       "publisher": "Unknown",
       "points": 93.5,
       "video": "2jqdM6n6bGw",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1208,7 +1208,7 @@
       "publisher": "Unknown",
       "points": 92.1,
       "video": "kWGePblsy4A",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1221,7 +1221,7 @@
       "publisher": "Unknown",
       "points": 90.7,
       "video": "TuSJkerhn9k",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1234,7 +1234,7 @@
       "publisher": "Unknown",
       "points": 89.4,
       "video": "9oYOKNUDTLs",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1247,7 +1247,7 @@
       "publisher": "Unknown",
       "points": 88.1,
       "video": "CLTMt5bMMao",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1260,7 +1260,7 @@
       "publisher": "Unknown",
       "points": 86.7,
       "video": "lkG5z9GcwUg",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1273,7 +1273,7 @@
       "publisher": "Unknown",
       "points": 85.5,
       "video": "HN0KHEHb6NQ",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1286,7 +1286,7 @@
       "publisher": "Unknown",
       "points": 84.2,
       "video": "0O4FZsuzkX8",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1299,7 +1299,7 @@
       "publisher": "Unknown",
       "points": 82.9,
       "video": "UVp8c6icAN8",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1312,7 +1312,7 @@
       "publisher": "Unknown",
       "points": 81.7,
       "video": "NnacKOE5Buo",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1325,7 +1325,7 @@
       "publisher": "Unknown",
       "points": 80.5,
       "video": "Fk2GM21Lxkc",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1338,7 +1338,7 @@
       "publisher": "Unknown",
       "points": 79.3,
       "video": "pUgK7uvYU98",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1351,7 +1351,7 @@
       "publisher": "Unknown",
       "points": 78.1,
       "video": "gERQ9M67LNg",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1364,7 +1364,7 @@
       "publisher": "Unknown",
       "points": 76.9,
       "video": "eEfjVG1L1Bw",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1377,7 +1377,7 @@
       "publisher": "Unknown",
       "points": 75.8,
       "video": "6LESSucKvAs",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1390,7 +1390,7 @@
       "publisher": "Unknown",
       "points": 74.7,
       "video": "2TgR98FnpfY",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1403,7 +1403,7 @@
       "publisher": "Unknown",
       "points": 73.5,
       "video": "NPwcPPZ9KXM",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1416,7 +1416,7 @@
       "publisher": "Unknown",
       "points": 72.5,
       "video": "49-HUZzia_I",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1429,7 +1429,7 @@
       "publisher": "Unknown",
       "points": 71.4,
       "video": "cs38uWHZiys&t=34s",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1461,7 +1461,7 @@
       "publisher": "Unknown",
       "points": 69.3,
       "video": "tNVuX4Pc8JU",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1474,7 +1474,7 @@
       "publisher": "Unknown",
       "points": 68.2,
       "video": "e9Bi80tgH-w",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1487,7 +1487,7 @@
       "publisher": "Unknown",
       "points": 67.2,
       "video": "cqltAG3b3Z0&t=103s",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1519,7 +1519,7 @@
       "publisher": "Unknown",
       "points": 65.2,
       "video": "70gtKY8Y3qA",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1532,7 +1532,7 @@
       "publisher": "Unknown",
       "points": 64.3,
       "video": "aYsG358Uh1s",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1545,7 +1545,7 @@
       "publisher": "Unknown",
       "points": 63.3,
       "video": "PTF6ZlTuwlM",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1558,7 +1558,7 @@
       "publisher": "Unknown",
       "points": 62.4,
       "video": "4ruYDxpDvOo",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1571,7 +1571,7 @@
       "publisher": "Unknown",
       "points": 61.4,
       "video": "WfRe-3DCDsA",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1584,7 +1584,7 @@
       "publisher": "Unknown",
       "points": 60.5,
       "video": "jcjzVyVm03I",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1597,7 +1597,7 @@
       "publisher": "Unknown",
       "points": 59.6,
       "video": "6goDHleUa0Y",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1610,7 +1610,7 @@
       "publisher": "Unknown",
       "points": 58.7,
       "video": "5RFX6NPHOWw&t=4s",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1623,7 +1623,7 @@
       "publisher": "Unknown",
       "points": 57.9,
       "video": "dFZQJiXkkHI",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1636,7 +1636,7 @@
       "publisher": "Unknown",
       "points": 57,
       "video": "b33WsfAKg4A",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1649,7 +1649,7 @@
       "publisher": "Unknown",
       "points": 56.1,
       "video": "-VcZY5wlsaw",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1662,7 +1662,7 @@
       "publisher": "Unknown",
       "points": 55.3,
       "video": "joL6PK7qEU0",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1675,7 +1675,7 @@
       "publisher": "Unknown",
       "points": 54.5,
       "video": "0ivXWuk89hQ",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1688,7 +1688,7 @@
       "publisher": "Unknown",
       "points": 53.7,
       "video": "h0KPRjLiYF4",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1701,7 +1701,7 @@
       "publisher": "Unknown",
       "points": 52.9,
       "video": "wdRfmNlbkBU",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1714,7 +1714,7 @@
       "publisher": "Unknown",
       "points": 52.1,
       "video": "k_PKZgTeo20",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1727,7 +1727,7 @@
       "publisher": "Unknown",
       "points": 51.3,
       "video": "N7Y4oBwmjyE",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1740,7 +1740,7 @@
       "publisher": "Unknown",
       "points": 50.5,
       "video": "_LlMLJHD_rA",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1753,7 +1753,7 @@
       "publisher": "Unknown",
       "points": 49.8,
       "video": "zKjmE_YeyVI",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1766,7 +1766,7 @@
       "publisher": "Unknown",
       "points": 49.1,
       "video": "FPL7771Gxb8",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1779,7 +1779,7 @@
       "publisher": "Unknown",
       "points": 48.3,
       "video": "kiaLwzp1v_0",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1792,7 +1792,7 @@
       "publisher": "Unknown",
       "points": 47.6,
       "video": "pEl3pg5Ozsk",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1805,7 +1805,7 @@
       "publisher": "Unknown",
       "points": 46.9,
       "video": "1JaHYoyrIvw",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1818,7 +1818,7 @@
       "publisher": "Unknown",
       "points": 46.2,
       "video": "FSKlr1MZ5iI",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1831,7 +1831,7 @@
       "publisher": "Unknown",
       "points": 45.5,
       "video": "1yAn-rXDrNY",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1844,7 +1844,7 @@
       "publisher": "Unknown",
       "points": 44.8,
       "video": "ZSlmnXpRVFo",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1857,7 +1857,7 @@
       "publisher": "Unknown",
       "points": 44.2,
       "video": "_hUi0vBKnJo",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1870,7 +1870,7 @@
       "publisher": "Unknown",
       "points": 43.5,
       "video": "R_oioG0AMrE",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1883,7 +1883,7 @@
       "publisher": "Unknown",
       "points": 42.9,
       "video": "gyt1n22xyx8",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1896,7 +1896,7 @@
       "publisher": "Unknown",
       "points": 42.2,
       "video": "EuXZlBqtRnA",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1909,7 +1909,7 @@
       "publisher": "Unknown",
       "points": 41.6,
       "video": "Bd3xJjoZ9MI",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1922,7 +1922,7 @@
       "publisher": "Unknown",
       "points": 41,
       "video": "uRkEHJiWSp4",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1935,7 +1935,7 @@
       "publisher": "Unknown",
       "points": 40.4,
       "video": "pLUkWFntI9I",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1948,7 +1948,7 @@
       "publisher": "Unknown",
       "points": 39.8,
       "video": "q3wU4R6RyDc",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1961,7 +1961,7 @@
       "publisher": "Unknown",
       "points": 39.2,
       "video": "nPCiayHl-7o",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1974,7 +1974,7 @@
       "publisher": "Unknown",
       "points": 38.6,
       "video": "IZLNpRGOov8",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -1987,7 +1987,7 @@
       "publisher": "Unknown",
       "points": 38,
       "video": "O7Ehj-Fx76E",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -2000,7 +2000,7 @@
       "publisher": "Unknown",
       "points": 37.4,
       "video": "8K_bM24vRc8",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -2013,7 +2013,7 @@
       "publisher": "Unknown",
       "points": 36.9,
       "video": "Fs8p3uZ9LRM",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -2026,7 +2026,7 @@
       "publisher": "Unknown",
       "points": 36.3,
       "video": "OlVN0pJnSMU",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -2039,7 +2039,7 @@
       "publisher": "Unknown",
       "points": 35.8,
       "video": "INPAARoo_90",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -2052,7 +2052,7 @@
       "publisher": "Unknown",
       "points": 35.3,
       "video": "dQw4w9WgXcQ",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -2065,7 +2065,7 @@
       "publisher": "Unknown",
       "points": 34.7,
       "video": "g9i93ysHiQ4",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -2078,7 +2078,7 @@
       "publisher": "Unknown",
       "points": 34.2,
       "video": "z3agjcCwnvk",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -2091,7 +2091,7 @@
       "publisher": "Unknown",
       "points": 33.7,
       "video": "FUswx9M2JXo&t=12s",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -2104,7 +2104,7 @@
       "publisher": "Unknown",
       "points": 33.2,
       "video": "bDmG36vJPVE",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     },
@@ -2117,7 +2117,7 @@
       "publisher": "Unknown",
       "points": 32.7,
       "video": "id_k1UG9ukM",
-      "minPercent": 60,
+      "minPercent": 100,
       "history": [],
       "legacy": false
     }
@@ -4365,6 +4365,15 @@
       "date": "2026-08-06",
       "notes": "First Victor / Record Holder",
       "timestamp": 1786029179533
+    },
+    {
+      "demonId": "15",
+      "player": "AerialShard",
+      "progress": 100,
+      "video": "https://youtu.be/eBxHNl3Uvto?si=iETJ4PF5YyacsdYK",
+      "date": "2026-08-12",
+      "notes": "",
+      "timestamp": 1786502237963
     }
   ],
   "players": [
